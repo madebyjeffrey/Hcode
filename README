@@ -1,0 +1,8 @@
+
+	Hcode: The Haskell DE
+
+	Initial versions, has a start to an editor using NSTextView in Cocoa.
+
+	Because there is not much here, I am going to license the parts that are mine under the GPL, although that may change in the future. If you need something, just ring.
+
+
