@@ -177,12 +177,32 @@
 	}
 	return NO;
 }*/
+
+- (NSUInteger) currentColumn {
+
+	// Cursor index most top left
+	NSArray *ranges = [documentView selectedRanges];
+	NSUInteger cursor_index = [[ranges objectAtIndex: 0] rangeValue].location;
 	
-- (BOOL) insertTab: (NSTextView*) aTextView {
-	[aTextView insertText: @"    "]; // doesn't align!
-	return YES;
+	NSString *doc = [[documentView textStorage] string];
+	// Line we are on
+	NSRange whole_line = [doc lineRangeForRange: NSMakeRange(cursor_index, 0)];
+	
+	return cursor_index - whole_line.location;
 }
 
+- (BOOL) insertTab: (NSTextView*) aTextView {
+
+	NSUInteger column = [self currentColumn];
+	NSUInteger insert = 4 - column % 4;
+	unichar str[5];
+	
+	[@"    " getCharacters: str range: NSMakeRange(0, 4)];
+	
+	[aTextView insertText: [NSString stringWithCharacters: str length: insert]]; 
+	
+	return YES;
+}
 
 - (BOOL) insertNewline: (NSTextView*) aTextView {
 	NSArray *ranges = [aTextView selectedRanges];

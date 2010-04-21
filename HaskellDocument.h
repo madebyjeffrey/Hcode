@@ -25,4 +25,6 @@
 @property (retain) NoodleLineNumberView<Plus> * lineNumberView;
 @property (retain) IBOutlet NSScrollView * scrollView;
 
+- (NSUInteger) currentColumn;
+
 @end
