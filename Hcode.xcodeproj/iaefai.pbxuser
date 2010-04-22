@@ -345,7 +345,7 @@
 	8A247D981179F1A8008E7210 /* CodeView.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {918, 624}}";
-			sepNavSelRange = "{1601, 0}";
+			sepNavSelRange = "{259, 1081}";
 			sepNavVisRange = "{0, 1682}";
 		};
 	};
@@ -353,7 +353,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {918, 3874}}";
 			sepNavSelRange = "{7616, 0}";
-			sepNavVisRange = "{6513, 1761}";
+			sepNavVisRange = "{6319, 1777}";
 		};
 	};
 	8A247DA31179FFE1008E7210 /* PBXTextBookmark */ = {
@@ -452,8 +452,8 @@
 	8AEE1867117F8EF500DCD7F4 /* CodeLineNumberView.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {936, 910}}";
-			sepNavSelRange = "{2208, 0}";
-			sepNavVisRange = "{1232, 1032}";
+			sepNavSelRange = "{2201, 0}";
+			sepNavVisRange = "{1473, 791}";
 		};
 	};
 	8AEE1898117FC05300DCD7F4 /* PBXTextBookmark */ = {

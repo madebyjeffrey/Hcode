@@ -17,6 +17,7 @@
 		8A247D9A1179F1A8008E7210 /* CodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A247D991179F1A8008E7210 /* CodeView.m */; };
 		8AEE1868117F8EF500DCD7F4 /* CodeLineNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEE1865117F8EF500DCD7F4 /* CodeLineNumberView.m */; };
 		8AEE1869117F8EF500DCD7F4 /* CodeLineNumberMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEE1866117F8EF500DCD7F4 /* CodeLineNumberMarker.m */; };
+		8AEE19A411801EDD00DCD7F4 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 8AEE19A311801EDD00DCD7F4 /* README.markdown */; };
 		8AEF920C117AC2FF006AAECC /* BWToolkitFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AEF920B117AC2FF006AAECC /* BWToolkitFramework.framework */; };
 		8AEF923D117AC302006AAECC /* BWToolkitFramework.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 8AEF920B117AC2FF006AAECC /* BWToolkitFramework.framework */; };
 		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
@@ -66,6 +67,7 @@
 		8AEE1865117F8EF500DCD7F4 /* CodeLineNumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeLineNumberView.m; sourceTree = "<group>"; };
 		8AEE1866117F8EF500DCD7F4 /* CodeLineNumberMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeLineNumberMarker.m; sourceTree = "<group>"; };
 		8AEE1867117F8EF500DCD7F4 /* CodeLineNumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeLineNumberView.h; sourceTree = "<group>"; };
+		8AEE19A311801EDD00DCD7F4 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 		8AEF920B117AC2FF006AAECC /* BWToolkitFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BWToolkitFramework.framework; sourceTree = "<group>"; };
 		8D15AC360486D014006FF6A4 /* Hcode-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Hcode-Info.plist"; sourceTree = "<group>"; };
 		8D15AC370486D014006FF6A4 /* Hcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +115,7 @@
 		2A37F4AAFDCFA73011CA2CEA /* Hcode */ = {
 			isa = PBXGroup;
 			children = (
+				8AEE19A311801EDD00DCD7F4 /* README.markdown */,
 				2A37F4ABFDCFA73011CA2CEA /* Classes */,
 				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
 				2A37F4B8FDCFA73011CA2CEA /* Resources */,
@@ -250,6 +253,7 @@
 				8A247C9911791D8E008E7210 /* LambdaIcon.icns in Resources */,
 				8A247CA011792AFB008E7210 /* hsfile.icns in Resources */,
 				8A247CA111792AFB008E7210 /* lhsFile.icns in Resources */,
+				8AEE19A411801EDD00DCD7F4 /* README.markdown in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
