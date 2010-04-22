@@ -9,22 +9,19 @@
 
 #import <Cocoa/Cocoa.h>
 
-#import "NoodleKit/NoodleLineNumberView.h"
+#import "CodeLineNumberView.h"
 
-@protocol Plus
-- (NSUInteger)lineNumberForCharacterIndex:(NSUInteger)index inText:(NSString *)text; // sorry need internal method
-@end
+#import "CodeView.h"
 
 @interface HaskellDocument: NSDocument
 {
 }
 
 @property (retain) IBOutlet NSTextField * locationLabel;
-@property (retain) IBOutlet NSTextView * documentView;
+@property (retain) IBOutlet CodeView * documentView;
 @property (retain) NSString * temporaryStorage;
-@property (retain) NoodleLineNumberView<Plus> * lineNumberView;
+@property (retain) CodeLineNumberView * lineNumberView;
 @property (retain) IBOutlet NSScrollView * scrollView;
 
-- (NSUInteger) currentColumn;
 
 @end

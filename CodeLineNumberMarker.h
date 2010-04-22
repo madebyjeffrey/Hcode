@@ -1,11 +1,8 @@
 //
-//  CodeView.h
-//  Hcode/CodeView
+//  NoodleLineNumberMarker.h
+//  NoodleKit
 //
-//  Created by Jeffrey Drake on 10-04-17.
-//  Copyright (c) 2010 by Jeffrey Drake. All rights reserved.
-//
-//	Some portions adapted from NoodleKit and are
+//  Created by Paul Kim on 9/30/08.
 //  Copyright (c) 2008 Noodlesoft, LLC. All rights reserved.
 //
 // Permission is hereby granted, free of charge, to any person
@@ -29,19 +26,24 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 // OTHER DEALINGS IN THE SOFTWARE.
 //
+
 #import <Cocoa/Cocoa.h>
 
+/*
+ Marker for NoodleLineNumberView.
+ 
+ For more details, see the related blog post at:  http://www.noodlesoft.com/blog/2008/10/05/displaying-line-numbers-with-nstextview/
+ */
 
-@interface CodeView : NSTextView {
-    NSMutableArray      *_lineIndices;
+@interface CodeLineNumberMarker : NSRulerMarker
+{
+	NSUInteger		_lineNumber;
 }
 
-- (NSUInteger) column;
-- (NSUInteger) line;
-- (NSUInteger) lineNumberForCharacterIndex:(NSUInteger)index;
-- (NSArray*)lineNumbersForRange: (NSRange)range;
+- (id)initWithRulerView:(NSRulerView *)aRulerView lineNumber:(CGFloat)line image:(NSImage *)anImage imageOrigin:(NSPoint)imageOrigin;
 
-- (IBAction) shiftLeft: (id)sender;
-- (IBAction) shiftRight: (id)sender;
+- (void)setLineNumber:(NSUInteger)line;
+- (NSUInteger)lineNumber;
+
 
 @end

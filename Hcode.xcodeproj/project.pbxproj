@@ -15,8 +15,8 @@
 		8A247CA611792BF9008E7210 /* HaskellDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A247CA511792BF9008E7210 /* HaskellDocument.m */; };
 		8A247D0E11794EC1008E7210 /* HcodeDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A247D0D11794EC1008E7210 /* HcodeDelegate.m */; };
 		8A247D9A1179F1A8008E7210 /* CodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A247D991179F1A8008E7210 /* CodeView.m */; };
-		8AACA942117A5C1400A4F385 /* NoodleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AACA941117A5C1400A4F385 /* NoodleKit.framework */; };
-		8AACA961117A62D300A4F385 /* NoodleKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 8AACA941117A5C1400A4F385 /* NoodleKit.framework */; };
+		8AEE1868117F8EF500DCD7F4 /* CodeLineNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEE1865117F8EF500DCD7F4 /* CodeLineNumberView.m */; };
+		8AEE1869117F8EF500DCD7F4 /* CodeLineNumberMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEE1866117F8EF500DCD7F4 /* CodeLineNumberMarker.m */; };
 		8AEF920C117AC2FF006AAECC /* BWToolkitFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AEF920B117AC2FF006AAECC /* BWToolkitFramework.framework */; };
 		8AEF923D117AC302006AAECC /* BWToolkitFramework.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 8AEF920B117AC2FF006AAECC /* BWToolkitFramework.framework */; };
 		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
@@ -34,7 +34,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				8AEF923D117AC302006AAECC /* BWToolkitFramework.framework in Copy Frameworks */,
-				8AACA961117A62D300A4F385 /* NoodleKit.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,7 +62,10 @@
 		8A247D0D11794EC1008E7210 /* HcodeDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HcodeDelegate.m; sourceTree = "<group>"; };
 		8A247D981179F1A8008E7210 /* CodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeView.h; sourceTree = "<group>"; };
 		8A247D991179F1A8008E7210 /* CodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeView.m; sourceTree = "<group>"; };
-		8AACA941117A5C1400A4F385 /* NoodleKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NoodleKit.framework; sourceTree = "<group>"; };
+		8AEE1864117F8EF500DCD7F4 /* CodeLineNumberMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeLineNumberMarker.h; sourceTree = "<group>"; };
+		8AEE1865117F8EF500DCD7F4 /* CodeLineNumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeLineNumberView.m; sourceTree = "<group>"; };
+		8AEE1866117F8EF500DCD7F4 /* CodeLineNumberMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeLineNumberMarker.m; sourceTree = "<group>"; };
+		8AEE1867117F8EF500DCD7F4 /* CodeLineNumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeLineNumberView.h; sourceTree = "<group>"; };
 		8AEF920B117AC2FF006AAECC /* BWToolkitFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BWToolkitFramework.framework; sourceTree = "<group>"; };
 		8D15AC360486D014006FF6A4 /* Hcode-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Hcode-Info.plist"; sourceTree = "<group>"; };
 		8D15AC370486D014006FF6A4 /* Hcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,7 +77,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
-				8AACA942117A5C1400A4F385 /* NoodleKit.framework in Frameworks */,
 				8AEF920C117AC2FF006AAECC /* BWToolkitFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -162,7 +163,6 @@
 			children = (
 				1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */,
 				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
-				8AACA941117A5C1400A4F385 /* NoodleKit.framework */,
 				8AEF920B117AC2FF006AAECC /* BWToolkitFramework.framework */,
 			);
 			name = Frameworks;
@@ -191,6 +191,10 @@
 			children = (
 				8A247D981179F1A8008E7210 /* CodeView.h */,
 				8A247D991179F1A8008E7210 /* CodeView.m */,
+				8AEE1864117F8EF500DCD7F4 /* CodeLineNumberMarker.h */,
+				8AEE1866117F8EF500DCD7F4 /* CodeLineNumberMarker.m */,
+				8AEE1867117F8EF500DCD7F4 /* CodeLineNumberView.h */,
+				8AEE1865117F8EF500DCD7F4 /* CodeLineNumberView.m */,
 			);
 			name = CodeView;
 			sourceTree = "<group>";
@@ -261,6 +265,8 @@
 				8A247CA611792BF9008E7210 /* HaskellDocument.m in Sources */,
 				8A247D0E11794EC1008E7210 /* HcodeDelegate.m in Sources */,
 				8A247D9A1179F1A8008E7210 /* CodeView.m in Sources */,
+				8AEE1868117F8EF500DCD7F4 /* CodeLineNumberView.m in Sources */,
+				8AEE1869117F8EF500DCD7F4 /* CodeLineNumberMarker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
