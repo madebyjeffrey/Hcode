@@ -91,4 +91,17 @@
 		 [NSString stringWithFormat: @"%u : %u", [documentView line]+1, [documentView column]+1]];
 }
 
+// Support for executing 'runhaskell' on current document
+- (void)runHaskell: (id) sender
+{
+	NSLog(@"RunHaskell on %@", [[self fileURL] path]);
+	
+	// Next set this to save the document first (ask?)
+	NSTask *rh = [[NSTask alloc] init];
+	
+	rh.launchPath = @"/usr/bin/runhaskell";
+	rh.arguments = [NSArray arrayWithObject: [[self fileURL] path]];
+	[rh launch];
+}
+
 @end
