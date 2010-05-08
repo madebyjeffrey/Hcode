@@ -15,6 +15,7 @@
 		8A247CA611792BF9008E7210 /* HaskellDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A247CA511792BF9008E7210 /* HaskellDocument.m */; };
 		8A247D0E11794EC1008E7210 /* HcodeDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A247D0D11794EC1008E7210 /* HcodeDelegate.m */; };
 		8A247D9A1179F1A8008E7210 /* CodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A247D991179F1A8008E7210 /* CodeView.m */; };
+		8A7857621187DD7D00FF8E98 /* Hicon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8A7857611187DD7D00FF8E98 /* Hicon.icns */; };
 		8AEE1868117F8EF500DCD7F4 /* CodeLineNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEE1865117F8EF500DCD7F4 /* CodeLineNumberView.m */; };
 		8AEE1869117F8EF500DCD7F4 /* CodeLineNumberMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEE1866117F8EF500DCD7F4 /* CodeLineNumberMarker.m */; };
 		8AEE19A411801EDD00DCD7F4 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 8AEE19A311801EDD00DCD7F4 /* README.markdown */; };
@@ -63,6 +64,7 @@
 		8A247D0D11794EC1008E7210 /* HcodeDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HcodeDelegate.m; sourceTree = "<group>"; };
 		8A247D981179F1A8008E7210 /* CodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeView.h; sourceTree = "<group>"; };
 		8A247D991179F1A8008E7210 /* CodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeView.m; sourceTree = "<group>"; };
+		8A7857611187DD7D00FF8E98 /* Hicon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Hicon.icns; sourceTree = "<group>"; };
 		8AEE1864117F8EF500DCD7F4 /* CodeLineNumberMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeLineNumberMarker.h; sourceTree = "<group>"; };
 		8AEE1865117F8EF500DCD7F4 /* CodeLineNumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeLineNumberView.m; sourceTree = "<group>"; };
 		8AEE1866117F8EF500DCD7F4 /* CodeLineNumberMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeLineNumberMarker.m; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8A7857611187DD7D00FF8E98 /* Hicon.icns */,
 				8A247C9E11792AFB008E7210 /* hsfile.icns */,
 				8A247C9F11792AFB008E7210 /* lhsFile.icns */,
 				8A247C9811791D8E008E7210 /* LambdaIcon.icns */,
@@ -254,6 +257,7 @@
 				8A247CA011792AFB008E7210 /* hsfile.icns in Resources */,
 				8A247CA111792AFB008E7210 /* lhsFile.icns in Resources */,
 				8AEE19A411801EDD00DCD7F4 /* README.markdown in Resources */,
+				8A7857621187DD7D00FF8E98 /* Hicon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

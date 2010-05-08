@@ -64,9 +64,9 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
-	<string>LambdaIcon.icns</string>
+	<string>Hicon.icns</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.ieafai.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>com.iaefai.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>

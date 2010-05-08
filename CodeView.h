@@ -39,7 +39,8 @@
 - (NSUInteger) column;
 - (NSUInteger) line;
 - (NSUInteger) lineNumberForCharacterIndex:(NSUInteger)index;
-- (NSArray*)lineNumbersForRange: (NSRange)range;
+- (NSArray*)   lineNumbersForRange: (NSRange)range;
+- (NSUInteger) characterIndexForLine: (NSUInteger) line;
 
 - (IBAction) shiftLeft: (id)sender;
 - (IBAction) shiftRight: (id)sender;

@@ -158,6 +158,15 @@
 	return [self lineNumberForCharacterIndex: range.location];
 }
 
+- (NSUInteger) characterIndexForLine: (NSUInteger) line
+{
+	NSMutableArray *lines = [self lineIndices];
+	
+	NSNumber *n = [lines objectAtIndex: line];
+	
+	return [n unsignedIntValue];
+}
+
 - (NSUInteger)lineNumberForCharacterIndex:(NSUInteger)index {
 	NSUInteger			left, right, mid, lineStart;
 	NSMutableArray		*lines;
