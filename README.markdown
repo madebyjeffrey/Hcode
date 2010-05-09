@@ -20,6 +20,9 @@ I have added BWToolkit (provides some modern UI elements) and have
 made use of a class from NoodleKit, and both of these are licensed 
 the same way; I have decided to license this code in the same way.
 
+To build, open the Xcode project 'Hcode.xcode' and select 
+'Build and Run' from the toolbar.
+
 License
 -------
 
