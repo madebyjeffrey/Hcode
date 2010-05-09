@@ -107,9 +107,11 @@
 - (IBAction) birdTrack: (id) sender
 {
 	// Add '> ' to the beginning of each line
+	// This function is written like the flying spaghetti monster would intend, so must reorganize it
 	
 	NSRange rng = [[[self.documentView selectedRanges] objectAtIndex: 0] rangeValue];
 	NSUInteger ci = rng.location + rng.length - 1;
+	NSString *s1 = [[self.documentView textStorage] string];
 	NSString *s = [[[self.documentView textStorage] string] substringWithRange: NSMakeRange(ci, 1)];
 	
 	// Test for newline at end of selection
@@ -129,12 +131,17 @@
 	
 	NSLog(@"\n");
 	for (NSNumber *v in e)
-	{
-
-		
+	{		
 		NSUInteger p = [self.documentView characterIndexForLine: [v unsignedIntegerValue]];
-		NSLog(@"Index: %d", p);		
-		NSRange r = NSMakeRange(p, 0);
+//		NSLog(@"Index: %d", p);		
+		NSRange r = NSMakeRange(p, 2);
+		
+		// Do we have a "> " already here?
+		NSRange z = [s1 rangeOfString: @"> " options: 0 range: r];
+		if (z.location != NSNotFound)
+			continue; 
+		
+		r.length = 0;
 		
 		if ([self.documentView shouldChangeTextInRange: r replacementString: @"> "])
 		{
@@ -143,13 +150,70 @@
 			[self.documentView didChangeText];
 		}
 	}
+	// update selection to the area we modified, whole lines
+	NSUInteger fi, li;
 	
+	fi = [self.documentView characterIndexForLine: [[lineRange objectAtIndex: 0] unsignedIntegerValue]];
+	li = [self.documentView characterIndexForLine: [[lineRange lastObject] unsignedIntegerValue]+1];
 	
+	NSRange y = { fi, li-fi };
+	
+	[self.documentView setSelectedRanges: [NSArray arrayWithObject: [NSValue valueWithRange: y]]];
 }
 
 - (IBAction) unBirdTrack: (id) sender
 {
 	// Remove '> ' from the beginning of each line
+	// This function is written like the flying spaghetti monster would intend, so must reorganize it
+	
+	NSRange rng = [[[self.documentView selectedRanges] objectAtIndex: 0] rangeValue];
+	NSUInteger ci = rng.location + rng.length - 1;
+	NSString *s = [[[self.documentView textStorage] string] substringWithRange: NSMakeRange(ci, 1)];
+	NSString *s1 = [[self.documentView textStorage] string];
+	
+	// Test for newline at end of selection
+	NSRange rng2 = [s rangeOfCharacterFromSet: [NSCharacterSet newlineCharacterSet]];
+	if (rng2.location != NSNotFound)
+	{
+	//	NSLog(@"Reducing length");
+		rng.length--;
+	}
+	
+	//	NSLog(@"End of selection = <%@>", s);
+	
+	NSArray *lineRange = [[self.documentView lineNumbersForRange: rng] copy];
+	
+	
+	NSEnumerator *e = [lineRange reverseObjectEnumerator];
+	
+	NSLog(@"\n");
+	for (NSNumber *v in e)
+	{
+		NSUInteger p = [self.documentView characterIndexForLine: [v unsignedIntegerValue]];
+		NSLog(@"Index: %d", p);		
+		NSRange r = NSMakeRange(p, 2);
+		
+		// Do we have a "> " already here?
+		NSRange z = [s1 rangeOfString: @"> " options: 0 range: r];
+		if (z.location != NSNotFound) {
+			if ([self.documentView shouldChangeTextInRange: r replacementString: @""])
+			{
+				[self.documentView replaceCharactersInRange: r withString: @""];
+				
+				[self.documentView didChangeText];
+			}
+		}
+	}
+	
+	NSUInteger fi, li;
+	
+	fi = [self.documentView characterIndexForLine: [[lineRange objectAtIndex: 0] unsignedIntegerValue]];
+	li = [self.documentView characterIndexForLine: [[lineRange lastObject] unsignedIntegerValue]+1];
+	
+	NSRange y = { fi, li-fi };
+
+	// update selection to the area we modified, whole lines
+	[self.documentView setSelectedRanges: [NSArray arrayWithObject: [NSValue valueWithRange: y]]];
 }
 
 @end
