@@ -20,6 +20,13 @@ I have added BWToolkit (provides some modern UI elements) and have
 made use of a class from NoodleKit, and both of these are licensed 
 the same way; I have decided to license this code in the same way.
 
+
+Requirements to Build
+---------------------
+
+Some of the controls are from the excellent BWToolkit, and to edit 
+in Interface Builder, it requires a plugin. You can obtain it [here](http://brandonwalkin.com/bwtoolkit/)
+
 To build, open the Xcode project 'Hcode.xcode' and select 
 'Build and Run' from the toolbar.
 
