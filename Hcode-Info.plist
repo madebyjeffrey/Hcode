@@ -12,7 +12,7 @@
 				<string>lhs</string>
 			</array>
 			<key>CFBundleTypeIconFile</key>
-			<string>lhsFile.icns</string>
+			<string>Hicon-LHS.icns</string>
 			<key>CFBundleTypeName</key>
 			<string>Literate Haskell Source</string>
 			<key>CFBundleTypeOSTypes</key>
@@ -30,7 +30,7 @@
 				<string>hs</string>
 			</array>
 			<key>CFBundleTypeIconFile</key>
-			<string>hsfile.icns</string>
+			<string>Hicon-HS.icns</string>
 			<key>CFBundleTypeName</key>
 			<string>Haskell Source</string>
 			<key>CFBundleTypeOSTypes</key>
@@ -48,9 +48,9 @@
 				<string>hcode</string>
 			</array>
 			<key>CFBundleTypeIconFile</key>
-			<string>LambdaIcon.icns</string>
+			<string>Hicon-Cabal.icns</string>
 			<key>CFBundleTypeName</key>
-			<string>Hcode Project</string>
+			<string>Cabal Source</string>
 			<key>CFBundleTypeOSTypes</key>
 			<array>
 				<string>????</string>
@@ -58,7 +58,7 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>NSDocumentClass</key>
-			<string>ProjectDocument</string>
+			<string>CabalDocument</string>
 		</dict>
 	</array>
 	<key>CFBundleExecutable</key>

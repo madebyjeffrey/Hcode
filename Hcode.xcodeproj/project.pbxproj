@@ -16,6 +16,9 @@
 		8A247D0E11794EC1008E7210 /* HcodeDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A247D0D11794EC1008E7210 /* HcodeDelegate.m */; };
 		8A247D9A1179F1A8008E7210 /* CodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A247D991179F1A8008E7210 /* CodeView.m */; };
 		8A7857621187DD7D00FF8E98 /* Hicon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8A7857611187DD7D00FF8E98 /* Hicon.icns */; };
+		8AE9FE2E1197D2360097783C /* Hicon-Cabal.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8AE9FE2B1197D2360097783C /* Hicon-Cabal.icns */; };
+		8AE9FE2F1197D2360097783C /* Hicon-HS.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8AE9FE2C1197D2360097783C /* Hicon-HS.icns */; };
+		8AE9FE301197D2360097783C /* Hicon-LHS.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8AE9FE2D1197D2360097783C /* Hicon-LHS.icns */; };
 		8AEE1868117F8EF500DCD7F4 /* CodeLineNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEE1865117F8EF500DCD7F4 /* CodeLineNumberView.m */; };
 		8AEE1869117F8EF500DCD7F4 /* CodeLineNumberMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEE1866117F8EF500DCD7F4 /* CodeLineNumberMarker.m */; };
 		8AEE19A411801EDD00DCD7F4 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 8AEE19A311801EDD00DCD7F4 /* README.markdown */; };
@@ -23,7 +26,7 @@
 		8AEF923D117AC302006AAECC /* BWToolkitFramework.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 8AEF920B117AC2FF006AAECC /* BWToolkitFramework.framework */; };
 		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
 		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
-		8D15AC310486D014006FF6A4 /* ProjectDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4ACFDCFA73011CA2CEA /* ProjectDocument.m */; settings = {ATTRIBUTES = (); }; };
+		8D15AC310486D014006FF6A4 /* CabalDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4ACFDCFA73011CA2CEA /* CabalDocument.m */; settings = {ATTRIBUTES = (); }; };
 		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -49,8 +52,8 @@
 		1DDD58290DA1D0D100B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/HaskellDocument.xib; sourceTree = "<group>"; };
 		1DDD582B0DA1D0D100B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		2564AD2C0F5327BB00F57823 /* Hcode_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hcode_Prefix.pch; sourceTree = "<group>"; };
-		2A37F4ACFDCFA73011CA2CEA /* ProjectDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectDocument.m; sourceTree = "<group>"; };
-		2A37F4AEFDCFA73011CA2CEA /* ProjectDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectDocument.h; sourceTree = "<group>"; };
+		2A37F4ACFDCFA73011CA2CEA /* CabalDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CabalDocument.m; sourceTree = "<group>"; };
+		2A37F4AEFDCFA73011CA2CEA /* CabalDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CabalDocument.h; sourceTree = "<group>"; };
 		2A37F4B0FDCFA73011CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2A37F4BAFDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
 		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
@@ -65,6 +68,9 @@
 		8A247D981179F1A8008E7210 /* CodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeView.h; sourceTree = "<group>"; };
 		8A247D991179F1A8008E7210 /* CodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeView.m; sourceTree = "<group>"; };
 		8A7857611187DD7D00FF8E98 /* Hicon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Hicon.icns; sourceTree = "<group>"; };
+		8AE9FE2B1197D2360097783C /* Hicon-Cabal.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "Hicon-Cabal.icns"; sourceTree = "<group>"; };
+		8AE9FE2C1197D2360097783C /* Hicon-HS.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "Hicon-HS.icns"; sourceTree = "<group>"; };
+		8AE9FE2D1197D2360097783C /* Hicon-LHS.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "Hicon-LHS.icns"; sourceTree = "<group>"; };
 		8AEE1864117F8EF500DCD7F4 /* CodeLineNumberMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeLineNumberMarker.h; sourceTree = "<group>"; };
 		8AEE1865117F8EF500DCD7F4 /* CodeLineNumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeLineNumberView.m; sourceTree = "<group>"; };
 		8AEE1866117F8EF500DCD7F4 /* CodeLineNumberMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeLineNumberMarker.m; sourceTree = "<group>"; };
@@ -151,6 +157,9 @@
 		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8AE9FE2B1197D2360097783C /* Hicon-Cabal.icns */,
+				8AE9FE2C1197D2360097783C /* Hicon-HS.icns */,
+				8AE9FE2D1197D2360097783C /* Hicon-LHS.icns */,
 				8A7857611187DD7D00FF8E98 /* Hicon.icns */,
 				8A247C9E11792AFB008E7210 /* hsfile.icns */,
 				8A247C9F11792AFB008E7210 /* lhsFile.icns */,
@@ -177,8 +186,8 @@
 		8A247CA211792BAA008E7210 /* Project File */ = {
 			isa = PBXGroup;
 			children = (
-				2A37F4AEFDCFA73011CA2CEA /* ProjectDocument.h */,
-				2A37F4ACFDCFA73011CA2CEA /* ProjectDocument.m */,
+				2A37F4AEFDCFA73011CA2CEA /* CabalDocument.h */,
+				2A37F4ACFDCFA73011CA2CEA /* CabalDocument.m */,
 			);
 			name = "Project File";
 			sourceTree = "<group>";
@@ -258,6 +267,9 @@
 				8A247CA111792AFB008E7210 /* lhsFile.icns in Resources */,
 				8AEE19A411801EDD00DCD7F4 /* README.markdown in Resources */,
 				8A7857621187DD7D00FF8E98 /* Hicon.icns in Resources */,
+				8AE9FE2E1197D2360097783C /* Hicon-Cabal.icns in Resources */,
+				8AE9FE2F1197D2360097783C /* Hicon-HS.icns in Resources */,
+				8AE9FE301197D2360097783C /* Hicon-LHS.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D15AC310486D014006FF6A4 /* ProjectDocument.m in Sources */,
+				8D15AC310486D014006FF6A4 /* CabalDocument.m in Sources */,
 				8D15AC320486D014006FF6A4 /* main.m in Sources */,
 				8A247CA611792BF9008E7210 /* HaskellDocument.m in Sources */,
 				8A247D0E11794EC1008E7210 /* HcodeDelegate.m in Sources */,

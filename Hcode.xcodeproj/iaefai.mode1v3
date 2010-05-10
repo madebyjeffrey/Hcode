@@ -279,6 +279,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -302,7 +303,7 @@
 							<real>239</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>-1 68 1589 885 0 0 1680 1028 </string>
+						<string>0 68 1589 885 0 0 1680 1028 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -320,7 +321,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>HaskellDocument.m</string>
+								<string>README.markdown</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -328,11 +329,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>HaskellDocument.m</string>
+										<string>README.markdown</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>8AE9FDF31197B9160097783C</string>
+										<string>8AE9FE291197CEA60097783C</string>
 										<key>history</key>
 										<array>
 											<string>8A247CEA11793FEA008E7210</string>
@@ -351,8 +352,8 @@
 											<string>8AE9FA9F11966B600097783C</string>
 											<string>8AE9FAA011966B600097783C</string>
 											<string>8AE9FDC0119784530097783C</string>
-											<string>8AE9FDC1119784530097783C</string>
-											<string>8AE9FDE31197B5F60097783C</string>
+											<string>8AE9FDF51197BA580097783C</string>
+											<string>8AE9FDF61197BA580097783C</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -366,7 +367,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1328, 565}}</string>
 								<key>RubberWindowFrame</key>
-								<string>-1 68 1589 885 0 0 1680 1028 </string>
+								<string>0 68 1589 885 0 0 1680 1028 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -391,7 +392,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>8AE9FDF41197B9160097783C</string>
+										<string>8AE9FE2A1197CEA60097783C</string>
 										<key>history</key>
 										<array>
 											<string>8A247CEA11793FEA008E7210</string>
@@ -425,7 +426,7 @@
 								<key>Frame</key>
 								<string>{{0, 570}, {1328, 269}}</string>
 								<key>RubberWindowFrame</key>
-								<string>-1 68 1589 885 0 0 1680 1028 </string>
+								<string>0 68 1589 885 0 0 1680 1028 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -445,7 +446,7 @@
 								<key>Frame</key>
 								<string>{{0, 844}, {1328, 0}}</string>
 								<key>RubberWindowFrame</key>
-								<string>-1 68 1589 885 0 0 1680 1028 </string>
+								<string>0 68 1589 885 0 0 1680 1028 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -619,7 +620,7 @@
 		<string>/Users/iaefai/Projects/Hcode/Hcode.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>-1 68 1589 885 0 0 1680 1028 </string>
+	<string>0 68 1589 885 0 0 1680 1028 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

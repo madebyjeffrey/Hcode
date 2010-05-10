@@ -25,7 +25,7 @@ Requirements to Build
 ---------------------
 
 Some of the controls are from the excellent BWToolkit, and to edit 
-in Interface Builder, it requires a plugin. You can obtain it [here](http://brandonwalkin.com/bwtoolkit/)
+in Interface Builder, it requires a plugin. You can obtain it [here](http://brandonwalkin.com/bwtoolkit/).
 
 To build, open the Xcode project 'Hcode.xcode' and select 
 'Build and Run' from the toolbar.

@@ -6,9 +6,9 @@
 //  Copyright 2010 N/A. All rights reserved.
 //
 
-#import "ProjectDocument.h"
+#import "CabalDocument.h"
 
-@implementation ProjectDocument
+@implementation CabalDocument
 
 - (id)init
 {

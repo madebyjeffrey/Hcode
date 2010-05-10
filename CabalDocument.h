@@ -9,7 +9,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ProjectDocument: NSDocument
+@interface CabalDocument: NSDocument
 {
 }
 @end
