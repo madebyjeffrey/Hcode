@@ -15,6 +15,7 @@
 			8D15AC270486D014006FF6A4 /* Hcode */,
 		);
 		breakpoints = (
+			8AE9FDE11197B5F30097783C /* HaskellDocument.m:112 */,
 		);
 		codeSenseManager = 8A247C9611790087008E7210 /* Code sense */;
 		executables = (
@@ -26,7 +27,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					740,
+					1089,
 					20,
 					48,
 					43,
@@ -101,6 +102,26 @@
 			8AE9FDB811967BBD0097783C /* PBXTextBookmark */ = 8AE9FDB811967BBD0097783C /* PBXTextBookmark */;
 			8AE9FDB911967BBD0097783C /* PBXBookmark */ = 8AE9FDB911967BBD0097783C /* PBXBookmark */;
 			8AE9FDBA11967BBD0097783C /* PBXTextBookmark */ = 8AE9FDBA11967BBD0097783C /* PBXTextBookmark */;
+			8AE9FDC0119784530097783C /* PBXTextBookmark */ = 8AE9FDC0119784530097783C /* PBXTextBookmark */;
+			8AE9FDC1119784530097783C /* PBXTextBookmark */ = 8AE9FDC1119784530097783C /* PBXTextBookmark */;
+			8AE9FDC2119784530097783C /* PBXTextBookmark */ = 8AE9FDC2119784530097783C /* PBXTextBookmark */;
+			8AE9FDC3119784530097783C /* PBXTextBookmark */ = 8AE9FDC3119784530097783C /* PBXTextBookmark */;
+			8AE9FDC61197AE8E0097783C /* PBXTextBookmark */ = 8AE9FDC61197AE8E0097783C /* PBXTextBookmark */;
+			8AE9FDCA1197AEAB0097783C /* PBXTextBookmark */ = 8AE9FDCA1197AEAB0097783C /* PBXTextBookmark */;
+			8AE9FDCE1197AED20097783C /* PBXTextBookmark */ = 8AE9FDCE1197AED20097783C /* PBXTextBookmark */;
+			8AE9FDD21197AEF40097783C /* PBXTextBookmark */ = 8AE9FDD21197AEF40097783C /* PBXTextBookmark */;
+			8AE9FDD61197AF880097783C /* PBXTextBookmark */ = 8AE9FDD61197AF880097783C /* PBXTextBookmark */;
+			8AE9FDDA1197B5DA0097783C /* PBXTextBookmark */ = 8AE9FDDA1197B5DA0097783C /* PBXTextBookmark */;
+			8AE9FDDF1197B5E80097783C /* PBXTextBookmark */ = 8AE9FDDF1197B5E80097783C /* PBXTextBookmark */;
+			8AE9FDE31197B5F60097783C /* PBXTextBookmark */ = 8AE9FDE31197B5F60097783C /* PBXTextBookmark */;
+			8AE9FDE41197B5F60097783C /* PBXTextBookmark */ = 8AE9FDE41197B5F60097783C /* PBXTextBookmark */;
+			8AE9FDE71197B7300097783C /* PBXTextBookmark */ = 8AE9FDE71197B7300097783C /* PBXTextBookmark */;
+			8AE9FDEB1197B7940097783C /* PBXTextBookmark */ = 8AE9FDEB1197B7940097783C /* PBXTextBookmark */;
+			8AE9FDED1197B8560097783C /* PBXTextBookmark */ = 8AE9FDED1197B8560097783C /* PBXTextBookmark */;
+			8AE9FDF01197B8F70097783C /* PBXTextBookmark */ = 8AE9FDF01197B8F70097783C /* PBXTextBookmark */;
+			8AE9FDF11197B8F70097783C /* PBXTextBookmark */ = 8AE9FDF11197B8F70097783C /* PBXTextBookmark */;
+			8AE9FDF31197B9160097783C /* PBXTextBookmark */ = 8AE9FDF31197B9160097783C /* PBXTextBookmark */;
+			8AE9FDF41197B9160097783C /* PBXTextBookmark */ = 8AE9FDF41197B9160097783C /* PBXTextBookmark */;
 			8AEE18FB117FEE0400DCD7F4 = 8AEE18FB117FEE0400DCD7F4 /* PBXTextBookmark */;
 			8AEE193D118009F300DCD7F4 = 8AEE193D118009F300DCD7F4 /* PBXTextBookmark */;
 			8AEE193F118009F300DCD7F4 = 8AEE193F118009F300DCD7F4 /* PBXTextBookmark */;
@@ -188,9 +209,9 @@
 	};
 	8A247CA511792BF9008E7210 /* HaskellDocument.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {918, 2938}}";
-			sepNavSelRange = "{6730, 0}";
-			sepNavVisRange = "{4128, 1616}";
+			sepNavIntBoundsRect = "{{0, 0}, {1267, 4056}}";
+			sepNavSelRange = "{7229, 200}";
+			sepNavVisRange = "{7033, 628}";
 		};
 	};
 	8A247CEA11793FEA008E7210 /* PBXTextBookmark */ = {
@@ -404,7 +425,7 @@
 		fRef = 8A247CA511792BF9008E7210 /* HaskellDocument.m */;
 		name = "HaskellDocument.m: 178";
 		rLen = 0;
-		rLoc = 5747;
+		rLoc = 6675;
 		rType = 0;
 		vrLen = 1137;
 		vrLoc = 5692;
@@ -414,7 +435,7 @@
 		fRef = 8A247CA511792BF9008E7210 /* HaskellDocument.m */;
 		name = "HaskellDocument.m: 178";
 		rLen = 0;
-		rLoc = 5747;
+		rLoc = 6675;
 		rType = 0;
 		vrLen = 1171;
 		vrLoc = 5658;
@@ -424,7 +445,7 @@
 		fRef = 8A247CA511792BF9008E7210 /* HaskellDocument.m */;
 		name = "HaskellDocument.m: 178";
 		rLen = 0;
-		rLoc = 5747;
+		rLoc = 6675;
 		rType = 0;
 		vrLen = 1530;
 		vrLoc = 4128;
@@ -434,7 +455,7 @@
 		fRef = 8A247CA511792BF9008E7210 /* HaskellDocument.m */;
 		name = "HaskellDocument.m: 178";
 		rLen = 0;
-		rLoc = 5747;
+		rLoc = 6675;
 		rType = 0;
 		vrLen = 1530;
 		vrLoc = 4128;
@@ -444,7 +465,7 @@
 		fRef = 8A247CA511792BF9008E7210 /* HaskellDocument.m */;
 		name = "HaskellDocument.m: 178";
 		rLen = 0;
-		rLoc = 5747;
+		rLoc = 6675;
 		rType = 0;
 		vrLen = 1530;
 		vrLoc = 4128;
@@ -454,7 +475,7 @@
 		fRef = 8A247CA511792BF9008E7210 /* HaskellDocument.m */;
 		name = "HaskellDocument.m: 211";
 		rLen = 0;
-		rLoc = 6732;
+		rLoc = 7660;
 		rType = 0;
 		vrLen = 1300;
 		vrLoc = 5622;
@@ -464,7 +485,7 @@
 		fRef = 8A247CA511792BF9008E7210 /* HaskellDocument.m */;
 		name = "HaskellDocument.m: 157";
 		rLen = 0;
-		rLoc = 4971;
+		rLoc = 5891;
 		rType = 0;
 		vrLen = 1346;
 		vrLoc = 3948;
@@ -474,7 +495,7 @@
 		fRef = 8A247CA511792BF9008E7210 /* HaskellDocument.m */;
 		name = "HaskellDocument.m: 211";
 		rLen = 0;
-		rLoc = 6730;
+		rLoc = 7658;
 		rType = 0;
 		vrLen = 1297;
 		vrLoc = 5624;
@@ -484,7 +505,7 @@
 		fRef = 8A247CA511792BF9008E7210 /* HaskellDocument.m */;
 		name = "HaskellDocument.m: 211";
 		rLen = 0;
-		rLoc = 6730;
+		rLoc = 7658;
 		rType = 0;
 		vrLen = 1616;
 		vrLoc = 4128;
@@ -494,7 +515,7 @@
 		fRef = 8A247CA511792BF9008E7210 /* HaskellDocument.m */;
 		name = "HaskellDocument.m: 211";
 		rLen = 0;
-		rLoc = 6730;
+		rLoc = 7658;
 		rType = 0;
 		vrLen = 1616;
 		vrLoc = 4128;
@@ -510,7 +531,7 @@
 		fRef = 8A247CA511792BF9008E7210 /* HaskellDocument.m */;
 		name = "HaskellDocument.m: 211";
 		rLen = 0;
-		rLoc = 6730;
+		rLoc = 7658;
 		rType = 0;
 		vrLen = 1616;
 		vrLoc = 4128;
@@ -520,7 +541,7 @@
 		fRef = 8A247CA511792BF9008E7210 /* HaskellDocument.m */;
 		name = "HaskellDocument.m: 211";
 		rLen = 0;
-		rLoc = 6730;
+		rLoc = 7658;
 		rType = 0;
 		vrLen = 1616;
 		vrLoc = 4128;
@@ -530,7 +551,7 @@
 		fRef = 8A247CA511792BF9008E7210 /* HaskellDocument.m */;
 		name = "HaskellDocument.m: 211";
 		rLen = 0;
-		rLoc = 6730;
+		rLoc = 7658;
 		rType = 0;
 		vrLen = 1616;
 		vrLoc = 4128;
@@ -554,6 +575,229 @@
 		name = ITTerminalView.h;
 		path = /Users/iaefai/Projects/Hcode/Frameworks/iTerm.framework/Headers/ITTerminalView.h;
 		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {957, 2093}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{146, 1075}";
+		};
+	};
+	8AE9FDC0119784530097783C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8AE9FC9A119673020097783C /* ITTerminalView.h */;
+		name = "ITTerminalView.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 146;
+	};
+	8AE9FDC1119784530097783C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8AEE19A311801EDD00DCD7F4 /* README.markdown */;
+		name = "README.markdown: 24";
+		rLen = 0;
+		rLoc = 935;
+		rType = 0;
+		vrLen = 1761;
+		vrLoc = 0;
+	};
+	8AE9FDC2119784530097783C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8A247CA511792BF9008E7210 /* HaskellDocument.m */;
+		name = "HaskellDocument.m: 211";
+		rLen = 0;
+		rLoc = 7658;
+		rType = 0;
+		vrLen = 1575;
+		vrLoc = 4169;
+	};
+	8AE9FDC3119784530097783C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8A247CA511792BF9008E7210 /* HaskellDocument.m */;
+		name = "HaskellDocument.m: 211";
+		rLen = 0;
+		rLoc = 7658;
+		rType = 0;
+		vrLen = 1431;
+		vrLoc = 3144;
+	};
+	8AE9FDC61197AE8E0097783C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8A247CA511792BF9008E7210 /* HaskellDocument.m */;
+		name = "HaskellDocument.m: 117";
+		rLen = 0;
+		rLoc = 4255;
+		rType = 0;
+		vrLen = 1444;
+		vrLoc = 3105;
+	};
+	8AE9FDCA1197AEAB0097783C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8A247CA511792BF9008E7210 /* HaskellDocument.m */;
+		name = "HaskellDocument.m: 116";
+		rLen = 0;
+		rLoc = 4255;
+		rType = 0;
+		vrLen = 1431;
+		vrLoc = 3105;
+	};
+	8AE9FDCE1197AED20097783C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8A247CA511792BF9008E7210 /* HaskellDocument.m */;
+		name = "HaskellDocument.m: 114";
+		rLen = 0;
+		rLoc = 4255;
+		rType = 0;
+		vrLen = 1439;
+		vrLoc = 3105;
+	};
+	8AE9FDD21197AEF40097783C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8A247CA511792BF9008E7210 /* HaskellDocument.m */;
+		name = "HaskellDocument.m: 115";
+		rLen = 0;
+		rLoc = 4255;
+		rType = 0;
+		vrLen = 1420;
+		vrLoc = 3105;
+	};
+	8AE9FDD61197AF880097783C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8A247CA511792BF9008E7210 /* HaskellDocument.m */;
+		name = "HaskellDocument.m: 115";
+		rLen = 0;
+		rLoc = 4255;
+		rType = 0;
+		vrLen = 1286;
+		vrLoc = 3051;
+	};
+	8AE9FDDA1197B5DA0097783C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8A247CA511792BF9008E7210 /* HaskellDocument.m */;
+		name = "HaskellDocument.m: 162";
+		rLen = 0;
+		rLoc = 5550;
+		rType = 0;
+		vrLen = 1859;
+		vrLoc = 4606;
+	};
+	8AE9FDDF1197B5E80097783C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8A247CA511792BF9008E7210 /* HaskellDocument.m */;
+		name = "HaskellDocument.m: 171";
+		rLen = 0;
+		rLoc = 6027;
+		rType = 0;
+		vrLen = 1701;
+		vrLoc = 4606;
+	};
+	8AE9FDE11197B5F30097783C /* HaskellDocument.m:112 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 8A247CA511792BF9008E7210 /* HaskellDocument.m */;
+		functionName = "-birdTrack:";
+		hitCount = 1;
+		ignoreCount = 0;
+		lineNumber = 112;
+		location = Hcode;
+		modificationTime = 295155192.667463;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	8AE9FDE31197B5F60097783C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8A247CA511792BF9008E7210 /* HaskellDocument.m */;
+		name = "HaskellDocument.m: 171";
+		rLen = 0;
+		rLoc = 6027;
+		rType = 0;
+		vrLen = 1934;
+		vrLoc = 3267;
+	};
+	8AE9FDE41197B5F60097783C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8A247CA511792BF9008E7210 /* HaskellDocument.m */;
+		name = "HaskellDocument.m: 171";
+		rLen = 0;
+		rLoc = 6027;
+		rType = 0;
+		vrLen = 1934;
+		vrLoc = 3267;
+	};
+	8AE9FDE71197B7300097783C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8A247CA511792BF9008E7210 /* HaskellDocument.m */;
+		name = "HaskellDocument.m: 155";
+		rLen = 0;
+		rLoc = 5179;
+		rType = 0;
+		vrLen = 1647;
+		vrLoc = 4232;
+	};
+	8AE9FDEB1197B7940097783C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8A247CA511792BF9008E7210 /* HaskellDocument.m */;
+		name = "HaskellDocument.m: 167";
+		rLen = 0;
+		rLoc = 5637;
+		rType = 0;
+		vrLen = 1705;
+		vrLoc = 4991;
+	};
+	8AE9FDED1197B8560097783C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8A247CA511792BF9008E7210 /* HaskellDocument.m */;
+		name = "HaskellDocument.m: 210";
+		rLen = 0;
+		rLoc = 7113;
+		rType = 0;
+		vrLen = 1926;
+		vrLoc = 7988;
+	};
+	8AE9FDF01197B8F70097783C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8A247CA511792BF9008E7210 /* HaskellDocument.m */;
+		name = "HaskellDocument.m: 177";
+		rLen = 0;
+		rLoc = 6032;
+		rType = 0;
+		vrLen = 1341;
+		vrLoc = 5504;
+	};
+	8AE9FDF11197B8F70097783C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8A247CA511792BF9008E7210 /* HaskellDocument.m */;
+		name = "HaskellDocument.m: 213";
+		rLen = 200;
+		rLoc = 7229;
+		rType = 0;
+		vrLen = 530;
+		vrLoc = 7033;
+	};
+	8AE9FDF31197B9160097783C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8A247CA511792BF9008E7210 /* HaskellDocument.m */;
+		name = "HaskellDocument.m: 177";
+		rLen = 0;
+		rLoc = 6032;
+		rType = 0;
+		vrLen = 1399;
+		vrLoc = 5504;
+	};
+	8AE9FDF41197B9160097783C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8A247CA511792BF9008E7210 /* HaskellDocument.m */;
+		name = "HaskellDocument.m: 213";
+		rLen = 200;
+		rLoc = 7229;
+		rType = 0;
+		vrLen = 628;
+		vrLoc = 7033;
 	};
 	8AEE1864117F8EF500DCD7F4 /* CodeLineNumberMarker.h */ = {
 		uiCtxt = {
@@ -646,8 +890,8 @@
 	8AEE19A311801EDD00DCD7F4 /* README.markdown */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {918, 637}}";
-			sepNavSelRange = "{418, 67}";
-			sepNavVisRange = "{1, 1882}";
+			sepNavSelRange = "{935, 0}";
+			sepNavVisRange = "{0, 1761}";
 		};
 	};
 	8D15AC270486D014006FF6A4 /* Hcode */ = {
