@@ -49,7 +49,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					615,
+					303,
 					60,
 					20,
 					48,
@@ -66,13 +66,16 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 295244415;
-			PBXWorkspaceStateSaveDate = 295244415;
+			PBXPerProjectTemplateStateSaveDate = 295244996;
+			PBXWorkspaceStateSaveDate = 295244996;
 		};
 		perUserProjectItems = {
-			8A10159E1199147800C6160D /* PBXBookmark */ = 8A10159E1199147800C6160D /* PBXBookmark */;
-			8A10159F1199147800C6160D /* PBXBookmark */ = 8A10159F1199147800C6160D /* PBXBookmark */;
-			8A1015A11199148400C6160D /* PlistBookmark */ = 8A1015A11199148400C6160D /* PlistBookmark */;
+			8A10159E1199147800C6160D = 8A10159E1199147800C6160D /* PBXBookmark */;
+			8A10159F1199147800C6160D = 8A10159F1199147800C6160D /* PBXBookmark */;
+			8A1015A11199148400C6160D = 8A1015A11199148400C6160D /* PlistBookmark */;
+			8A1015B61199152400C6160D /* PlistBookmark */ = 8A1015B61199152400C6160D /* PlistBookmark */;
+			8A1015B71199152400C6160D /* PBXBookmark */ = 8A1015B71199152400C6160D /* PBXBookmark */;
+			8A1015B81199152400C6160D /* PBXTextBookmark */ = 8A1015B81199152400C6160D /* PBXTextBookmark */;
 		};
 		sourceControlManager = 8A247C9511790087008E7210 /* Source Control */;
 		userBuildSettings = {
@@ -102,9 +105,9 @@
 	};
 	2A37F4BAFDCFA73011CA2CEA /* Credits.rtf */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1287, 548}}";
+			sepNavIntBoundsRect = "{{0, 0}, {541, 358}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRect = "{{0, 0}, {1287, 548}}";
+			sepNavVisRect = "{{0, 0}, {541, 358}}";
 		};
 	};
 	8A10159E1199147800C6160D /* PBXBookmark */ = {
@@ -124,7 +127,32 @@
 		);
 		name = "/Users/iaefai/Projects/Hcode/Resources/Hcode-Info.plist";
 		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	8A1015B61199152400C6160D /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D15AC360486D014006FF6A4 /* Hcode-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/iaefai/Projects/Hcode/Resources/Hcode-Info.plist";
+		rLen = 0;
 		rLoc = 9223372036854775807;
+	};
+	8A1015B71199152400C6160D /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 2A37F4BAFDCFA73011CA2CEA /* Credits.rtf */;
+	};
+	8A1015B81199152400C6160D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2A37F4BAFDCFA73011CA2CEA /* Credits.rtf */;
+		name = "Credits.rtf: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 157;
+		vrLoc = 0;
 	};
 	8A247C8C11790082008E7210 /* Hcode */ = {
 		isa = PBXExecutable;

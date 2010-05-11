@@ -358,8 +358,8 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Hcode_Prefix.pch;
-				INFOPLIST_FILE = "Hcode-Info.plist";
+				GCC_PREFIX_HEADER = Source/Hcode_Prefix.pch;
+				INFOPLIST_FILE = "Resources/Hcode-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = Hcode;
 			};
@@ -378,8 +378,8 @@
 				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Hcode_Prefix.pch;
-				INFOPLIST_FILE = "Hcode-Info.plist";
+				GCC_PREFIX_HEADER = Source/Hcode_Prefix.pch;
+				INFOPLIST_FILE = "Resources/Hcode-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = Hcode;
 			};
