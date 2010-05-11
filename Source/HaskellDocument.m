@@ -9,6 +9,10 @@
 #import "HaskellDocument.h"
 
 
+@interface HaskellDocument (Private)
+- (NSString *)haskellLaunchPath;
+@end
+
 @implementation HaskellDocument
 
 @synthesize locationLabel, documentView, temporaryStorage, lineNumberView, scrollView;
@@ -98,10 +102,31 @@
 	
 	// Next set this to save the document first (ask?)
 	NSTask *rh = [[NSTask alloc] init];
-	
-	rh.launchPath = @"/usr/bin/runhaskell";
+	rh.launchPath = [self haskellLaunchPath];
 	rh.arguments = [NSArray arrayWithObject: [[self fileURL] path]];
+    NSLog(@"launch path: %@", rh.launchPath);
 	[rh launch];
+}
+
+- (NSString *)haskellLaunchPath
+{
+    // TODO: Allow this to be set in the preferences file?
+    NSTask *which = [[NSTask alloc] init];
+    NSPipe *pipe = [NSPipe pipe];
+    NSString *path = @"/usr/bin/runhaskell";
+    [which setLaunchPath:@"/usr/bin/which"];
+    [which setArguments:[NSArray arrayWithObject:@"runhaskell"]];
+    [which setStandardOutput:pipe];
+    [which launch];
+    [which waitUntilExit];
+    if ([which terminationStatus] == 0) {
+        NSData *data = [[pipe fileHandleForReading] readDataToEndOfFile];
+        path = [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
+        path = [path stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        NSLog(@"Found runhaskell using which: %@", path);
+    }
+    [which release];
+    return path;
 }
 
 - (IBAction) birdTrack: (id) sender
