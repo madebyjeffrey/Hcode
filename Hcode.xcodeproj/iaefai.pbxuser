@@ -70,11 +70,15 @@
 			PBXWorkspaceStateSaveDate = 295250155;
 		};
 		perUserProjectItems = {
-			8A10159E1199147800C6160D = 8A10159E1199147800C6160D /* PBXBookmark */;
-			8A1015B61199152400C6160D = 8A1015B61199152400C6160D /* PlistBookmark */;
-			8A1015E51199281400C6160D = 8A1015E51199281400C6160D /* PBXTextBookmark */;
-			8A1015E61199281400C6160D = 8A1015E61199281400C6160D /* PlistBookmark */;
-			8AB0C542119928F000F2147B /* PlistBookmark */ = 8AB0C542119928F000F2147B /* PlistBookmark */;
+			8A10159E1199147800C6160D /* PBXBookmark */ = 8A10159E1199147800C6160D /* PBXBookmark */;
+			8A1015E51199281400C6160D /* PBXTextBookmark */ = 8A1015E51199281400C6160D /* PBXTextBookmark */;
+			8AB0C58C119A7B1300F2147B /* PlistBookmark */ = 8AB0C58C119A7B1300F2147B /* PlistBookmark */;
+			8AB0C58D119A7B1300F2147B /* PBXTextBookmark */ = 8AB0C58D119A7B1300F2147B /* PBXTextBookmark */;
+			8AB0C58E119A7B1300F2147B /* PBXTextBookmark */ = 8AB0C58E119A7B1300F2147B /* PBXTextBookmark */;
+			8AB0C58F119A7B1300F2147B /* PBXTextBookmark */ = 8AB0C58F119A7B1300F2147B /* PBXTextBookmark */;
+			8AB0C590119A7B1300F2147B /* PlistBookmark */ = 8AB0C590119A7B1300F2147B /* PlistBookmark */;
+			8AB0C591119A7B1300F2147B /* PBXTextBookmark */ = 8AB0C591119A7B1300F2147B /* PBXTextBookmark */;
+			8AB0C592119A7B1300F2147B /* PBXTextBookmark */ = 8AB0C592119A7B1300F2147B /* PBXTextBookmark */;
 		};
 		sourceControlManager = 8A247C9511790087008E7210 /* Source Control */;
 		userBuildSettings = {
@@ -113,17 +117,6 @@
 		isa = PBXBookmark;
 		fRef = 8A247C9811791D8E008E7210 /* LambdaIcon.icns */;
 	};
-	8A1015B61199152400C6160D /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D15AC360486D014006FF6A4 /* Hcode-Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = "/Users/iaefai/Projects/Hcode/Resources/Hcode-Info.plist";
-		rLen = 0;
-		rLoc = 9223372036854775808;
-	};
 	8A1015E51199281400C6160D /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 2A37F4BAFDCFA73011CA2CEA /* Credits.rtf */;
@@ -133,18 +126,6 @@
 		rType = 0;
 		vrLen = 220;
 		vrLoc = 0;
-	};
-	8A1015E61199281400C6160D /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D15AC360486D014006FF6A4 /* Hcode-Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-			CFBundleInfoDictionaryVersion,
-		);
-		name = "/Users/iaefai/Projects/Hcode/Resources/Hcode-Info.plist";
-		rLen = 0;
-		rLoc = 9223372036854775808;
 	};
 	8A247C8C11790082008E7210 /* Hcode */ = {
 		isa = PBXExecutable;
@@ -201,9 +182,9 @@
 	};
 	8A247CA511792BF9008E7210 /* HaskellDocument.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1356, 3341}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1356, 3549}}";
 			sepNavSelRange = "{1599, 0}";
-			sepNavVisRange = "{0, 2089}";
+			sepNavVisRange = "{2778, 1737}";
 		};
 	};
 	8A247D0C11794EC1008E7210 /* HcodeDelegate.h */ = {
@@ -215,9 +196,9 @@
 	};
 	8A247D0D11794EC1008E7210 /* HcodeDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1267, 533}}";
-			sepNavSelRange = "{266, 0}";
-			sepNavVisRange = "{0, 358}";
+			sepNavIntBoundsRect = "{{0, 0}, {872, 578}}";
+			sepNavSelRange = "{545, 0}";
+			sepNavVisRange = "{0, 829}";
 		};
 	};
 	8A247D981179F1A8008E7210 /* CodeView.h */ = {
@@ -229,9 +210,9 @@
 	};
 	8A247D991179F1A8008E7210 /* CodeView.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1267, 4446}}";
-			sepNavSelRange = "{4286, 0}";
-			sepNavVisRange = "{3290, 1635}";
+			sepNavIntBoundsRect = "{{0, 0}, {872, 4277}}";
+			sepNavSelRange = "{6753, 0}";
+			sepNavVisRange = "{5613, 1607}";
 		};
 	};
 	8A7857611187DD7D00FF8E98 /* Hicon.icns */ = {
@@ -239,7 +220,7 @@
 			sepNavWindowFrame = "{{15, 54}, {754, 969}}";
 		};
 	};
-	8AB0C542119928F000F2147B /* PlistBookmark */ = {
+	8AB0C58C119A7B1300F2147B /* PlistBookmark */ = {
 		isa = PlistBookmark;
 		fRef = 8D15AC360486D014006FF6A4 /* Hcode-Info.plist */;
 		fallbackIsa = PBXBookmark;
@@ -250,6 +231,68 @@
 		name = "/Users/iaefai/Projects/Hcode/Resources/Hcode-Info.plist";
 		rLen = 0;
 		rLoc = 9223372036854775807;
+	};
+	8AB0C58D119A7B1300F2147B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8A247CA511792BF9008E7210 /* HaskellDocument.m */;
+		name = "HaskellDocument.m: 55";
+		rLen = 0;
+		rLoc = 1599;
+		rType = 0;
+		vrLen = 1737;
+		vrLoc = 2778;
+	};
+	8AB0C58E119A7B1300F2147B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8A247D0D11794EC1008E7210 /* HcodeDelegate.m */;
+		name = "HcodeDelegate.m: 26";
+		rLen = 0;
+		rLoc = 545;
+		rType = 0;
+		vrLen = 829;
+		vrLoc = 0;
+	};
+	8AB0C58F119A7B1300F2147B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8AEE1865117F8EF500DCD7F4 /* CodeLineNumberView.m */;
+		name = "CodeLineNumberView.m: 3";
+		rLen = 0;
+		rLoc = 40;
+		rType = 0;
+		vrLen = 1661;
+		vrLoc = 0;
+	};
+	8AB0C590119A7B1300F2147B /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8AB0C56F119A6EDB00F2147B /* Defaults.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			spacesPerTab,
+		);
+		name = /Users/iaefai/Projects/Hcode/Defaults.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	8AB0C591119A7B1300F2147B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8A247D991179F1A8008E7210 /* CodeView.m */;
+		name = "CodeView.m: 225";
+		rLen = 0;
+		rLoc = 5865;
+		rType = 0;
+		vrLen = 1342;
+		vrLoc = 5233;
+	};
+	8AB0C592119A7B1300F2147B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8A247D991179F1A8008E7210 /* CodeView.m */;
+		name = "CodeView.m: 253";
+		rLen = 0;
+		rLoc = 6753;
+		rType = 0;
+		vrLen = 1607;
+		vrLoc = 5613;
 	};
 	8AE6F84C119910A600A24D7D /* ConsoleDocument.h */ = {
 		uiCtxt = {
@@ -292,9 +335,9 @@
 	};
 	8AEE1865117F8EF500DCD7F4 /* CodeLineNumberView.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1267, 7267}}";
+			sepNavIntBoundsRect = "{{0, 0}, {872, 7293}}";
 			sepNavSelRange = "{40, 0}";
-			sepNavVisRange = "{0, 1501}";
+			sepNavVisRange = "{0, 1661}";
 		};
 	};
 	8AEE1866117F8EF500DCD7F4 /* CodeLineNumberMarker.m */ = {

@@ -13,7 +13,23 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-		// ...
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	
+	NSBundle *this = [NSBundle mainBundle];
+	
+	NSString *path = [this pathForResource: @"Defaults" ofType: @"plist"];
+	if (!path) {
+		NSLog(@"Defaults plist not found.");
+		return;
+	}
+	
+	NSDictionary *defaultsDictionary = [NSDictionary dictionaryWithContentsOfFile: path];
+	if (!defaultsDictionary) {
+		NSLog(@"Couldn't load defaults dictionary");
+		return;
+	}
+	
+	[defaults registerDefaults: defaultsDictionary];	
 }
 
 - (BOOL)applicationShouldOpenUntitledFile:(NSApplication *)sender

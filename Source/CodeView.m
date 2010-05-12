@@ -209,17 +209,21 @@
 }
 
 - (void) insertTab: (id) sender {
+	NSUInteger n = (NSUInteger)[[NSUserDefaults standardUserDefaults] integerForKey: @"spacesPerTab"];
+	n = MIN(n, 9);
 	
 	NSUInteger column = [self column];
-	NSUInteger insert = 4 - column % 4;
+	NSUInteger insert = n - column % n;
 	unichar str[5];
 	
-	[@"    " getCharacters: str range: NSMakeRange(0, 4)];
+	[@"           " getCharacters: str range: NSMakeRange(0, n)];
 	
 	[self insertText: [NSString stringWithCharacters: str length: insert]]; 
 }
 
 - (void) insertNewline: (id) sender {
+	BOOL autoIndent = [[NSUserDefaults standardUserDefaults] boolForKey: @"autoIndent"];
+	
 	NSArray *ranges = [self selectedRanges];
 	
 	// Note, behaviour matches xcode as best observed.
@@ -243,7 +247,10 @@
 	
 	// Our indent is that many spaces
 	NSString *indent = [line substringWithRange: NSMakeRange(0, i)];
-	indent = [@"\n" stringByAppendingFormat: indent, nil];
+	
+	if (autoIndent)
+		indent = [@"\n" stringByAppendingFormat: indent, nil];
+	else indent = @"\n";
 	
 	// Replace the first selection with a new line followed by the indent spacing.	
 	if ([self shouldChangeTextInRange: [[ranges objectAtIndex: 0] rangeValue] 
