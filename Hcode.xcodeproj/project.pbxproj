@@ -70,7 +70,7 @@
 		8A247D981179F1A8008E7210 /* CodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CodeView.h; path = Source/CodeView.h; sourceTree = "<group>"; };
 		8A247D991179F1A8008E7210 /* CodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CodeView.m; path = Source/CodeView.m; sourceTree = "<group>"; };
 		8A7857611187DD7D00FF8E98 /* Hicon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = Hicon.icns; path = Resources/Hicon.icns; sourceTree = "<group>"; };
-		8AB0C56F119A6EDB00F2147B /* Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Defaults.plist; sourceTree = "<group>"; };
+		8AB0C56F119A6EDB00F2147B /* Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Defaults.plist; path = Resources/Defaults.plist; sourceTree = "<group>"; };
 		8AE6F84C119910A600A24D7D /* ConsoleDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConsoleDocument.h; path = Source/ConsoleDocument.h; sourceTree = "<group>"; };
 		8AE6F84D119910A600A24D7D /* ConsoleDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConsoleDocument.m; path = Source/ConsoleDocument.m; sourceTree = "<group>"; };
 		8AE9FE2B1197D2360097783C /* Hicon-Cabal.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = "Hicon-Cabal.icns"; path = "Resources/Hicon-Cabal.icns"; sourceTree = "<group>"; };
