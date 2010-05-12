@@ -15,6 +15,11 @@
 
 @interface HaskellDocument: NSDocument
 {
+	IBOutlet NSTextField * locationLabel;
+	IBOutlet CodeView * documentView;
+	NSString * temporaryStorage;
+	CodeLineNumberView * lineNumberView;
+	IBOutlet NSScrollView * scrollView;
 }
 
 @property (retain) IBOutlet NSTextField * locationLabel;

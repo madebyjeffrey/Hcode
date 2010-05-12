@@ -2,7 +2,7 @@
 Hcode: The Haskell Editor
 =========================
 
-Hcode is meant to be a spartan editor for the purpose of editing 
+[Hcode](http://web.me.com/iaefai) is meant to be a spartan editor for the purpose of editing 
 Haskell source code for MacOS X.
 
 It is written using Cocoa/Objective-C to give the best experience 

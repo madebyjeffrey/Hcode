@@ -15,6 +15,7 @@
 		8A247CA611792BF9008E7210 /* HaskellDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A247CA511792BF9008E7210 /* HaskellDocument.m */; };
 		8A247D0E11794EC1008E7210 /* HcodeDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A247D0D11794EC1008E7210 /* HcodeDelegate.m */; };
 		8A247D9A1179F1A8008E7210 /* CodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A247D991179F1A8008E7210 /* CodeView.m */; };
+		8A4766C4119B219800B1AA85 /* Hicon-2.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8A4766C3119B219800B1AA85 /* Hicon-2.icns */; };
 		8A7857621187DD7D00FF8E98 /* Hicon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8A7857611187DD7D00FF8E98 /* Hicon.icns */; };
 		8AB0C570119A6EDB00F2147B /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AB0C56F119A6EDB00F2147B /* Defaults.plist */; };
 		8AE6F84E119910A600A24D7D /* ConsoleDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AE6F84D119910A600A24D7D /* ConsoleDocument.m */; };
@@ -69,6 +70,7 @@
 		8A247D0D11794EC1008E7210 /* HcodeDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HcodeDelegate.m; path = Source/HcodeDelegate.m; sourceTree = "<group>"; };
 		8A247D981179F1A8008E7210 /* CodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CodeView.h; path = Source/CodeView.h; sourceTree = "<group>"; };
 		8A247D991179F1A8008E7210 /* CodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CodeView.m; path = Source/CodeView.m; sourceTree = "<group>"; };
+		8A4766C3119B219800B1AA85 /* Hicon-2.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = "Hicon-2.icns"; path = "Resources/Hicon-2.icns"; sourceTree = "<group>"; };
 		8A7857611187DD7D00FF8E98 /* Hicon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = Hicon.icns; path = Resources/Hicon.icns; sourceTree = "<group>"; };
 		8AB0C56F119A6EDB00F2147B /* Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Defaults.plist; path = Resources/Defaults.plist; sourceTree = "<group>"; };
 		8AE6F84C119910A600A24D7D /* ConsoleDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConsoleDocument.h; path = Source/ConsoleDocument.h; sourceTree = "<group>"; };
@@ -130,7 +132,7 @@
 			children = (
 				8AEE19A311801EDD00DCD7F4 /* README.markdown */,
 				2A37F4ABFDCFA73011CA2CEA /* Source */,
-				2A37F4B8FDCFA73011CA2CEA /* Resources */,
+				2A37F4B8FDCFA73011CA2CEA /* Hcode */,
 				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
 				19C28FB0FE9D524F11CA2CBB /* Products */,
 			);
@@ -160,9 +162,10 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
-		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
+		2A37F4B8FDCFA73011CA2CEA /* Hcode */ = {
 			isa = PBXGroup;
 			children = (
+				8A4766C3119B219800B1AA85 /* Hicon-2.icns */,
 				8AE9FE2B1197D2360097783C /* Hicon-Cabal.icns */,
 				8AE9FE2C1197D2360097783C /* Hicon-HS.icns */,
 				8AE9FE2D1197D2360097783C /* Hicon-LHS.icns */,
@@ -177,7 +180,7 @@
 				1DDD582A0DA1D0D100B32029 /* MainMenu.xib */,
 				8AB0C56F119A6EDB00F2147B /* Defaults.plist */,
 			);
-			name = Resources;
+			name = Hcode;
 			sourceTree = "<group>";
 		};
 		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
@@ -287,6 +290,7 @@
 				8AE9FE2F1197D2360097783C /* Hicon-HS.icns in Resources */,
 				8AE9FE301197D2360097783C /* Hicon-LHS.icns in Resources */,
 				8AB0C570119A6EDB00F2147B /* Defaults.plist in Resources */,
+				8A4766C4119B219800B1AA85 /* Hicon-2.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,7 +398,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CODE_SIGN_IDENTITY = "Don't Code Sign";
-				CURRENT_PROJECT_VERSION = 0.1;
+				CURRENT_PROJECT_VERSION = 0.1a;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -402,6 +406,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
 				SDKROOT = macosx10.6;
+				VALID_ARCHS = "i386 x86_64";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -411,7 +416,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CODE_SIGN_IDENTITY = "Don't Code Sign";
-				CURRENT_PROJECT_VERSION = 0.1;
+				CURRENT_PROJECT_VERSION = 0.1a;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;

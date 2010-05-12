@@ -64,7 +64,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
-	<string>Hicon.icns</string>
+	<string>Hicon-2.icns</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.iaefai.Hcode</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -78,7 +78,7 @@
 	<key>CFBundleVersion</key>
 	<string>${CURRENT_PROJECT_VERSION}</string>
 	<key>CFBundleShortVersionString</key>
-	<string>Hcode ${CURRENT_PROJECT_VERSION}</string>
+	<string>α2</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
 	<key>NSMainNibFile</key>
