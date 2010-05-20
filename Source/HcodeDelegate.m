@@ -11,6 +11,8 @@
 
 @implementation HcodeDelegate
 
+@synthesize console, toggleConsoleMenu, runItem;
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -28,13 +30,70 @@
 		NSLog(@"Couldn't load defaults dictionary");
 		return;
 	}
-	
+
 	[defaults registerDefaults: defaultsDictionary];	
+	
+	
+	console = [[Console alloc] initWithWindowNibName: @"Console"];
+	console.delegate = self;
+	
+	[console log: @"Hcode Initialized"];
+	
+/*	consoleWindow.delegate = self;
+	
+
+	
+	[consoleWindow setExcludedFromWindowsMenu: YES];
+	[self.console insertText: @"Console Shown\nNext!"];
+*/	
+//	NSAttributedString *str = [[NSAttributedString alloc] initWithHTML: [@"<hr>" dataUsingEncoding: NSUnicodeStringEncoding] 
+//													documentAttributes: NULL];
+	
+//	[self.console insertText: str];
+ 
+							   
+							   
+
 }
 
 - (BOOL)applicationShouldOpenUntitledFile:(NSApplication *)sender
 {
 	return NO;
+}
+
+
+/*
+- (BOOL)windowDidExpose:(id) sender
+{
+	if (sender == consoleWindow)
+		toggleConsoleMenu.title = @"Hide Console";
+	
+	return YES;
+}
+
+- (BOOL) windowWillClose: (id) sender
+{
+	if (sender == consoleWindow)
+		toggleConsoleMenu.title = @"Show Console";
+	
+	return YES;
+}
+*/
+- (IBAction) clearConsole: (id) sender
+{
+	[console clear];
+}
+- (IBAction) toggleConsole: (NSMenuItem*) sender
+{
+	if ([[console window] isVisible] == NO)
+	{	// Console should be invisible now
+//		[console makeKeyAndOrderFront: self];
+		[console showWindow: sender];
+
+	} else {
+//		[consoleWindow performClose: self];
+		[console close];
+	}
 }
 
 @end

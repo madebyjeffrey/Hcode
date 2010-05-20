@@ -1,5 +1,5 @@
 //
-//  ConsoleDocument.h
+//  Console.h
 //  Hcode
 //
 //  Created by Jeffrey Drake on 10-05-11.
@@ -9,8 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface ConsoleDocument : NSDocument {
-
+@interface ConsoleView : NSTextView {
 }
 
 @end

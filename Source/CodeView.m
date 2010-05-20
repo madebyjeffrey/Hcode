@@ -325,5 +325,24 @@
 	[self setSelectedRanges: [NSArray arrayWithObject: [NSValue valueWithRange: initialRange]]];
 }
 
+- (NSString*) getLine: (NSUInteger) line
+{
+	NSArray *indices = [self lineIndices];
+	
+	NSUInteger start, end, contentsEnd;
+
+	start = [[indices objectAtIndex: line] unsignedIntegerValue];
+	NSRange lineRange = NSMakeRange(start, 0);
+	
+	[[[self textStorage] string] getLineStart: &start end: &end contentsEnd: &contentsEnd forRange: lineRange];
+	
+	lineRange.location = start;
+	lineRange.length = contentsEnd - start;
+	
+	NSString *string = [[[self textStorage] string] substringWithRange: lineRange];
+	
+	return string;
+	
+}
 
 @end

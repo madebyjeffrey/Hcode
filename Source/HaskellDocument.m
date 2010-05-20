@@ -7,7 +7,8 @@
 //
 
 #import "HaskellDocument.h"
-
+#import "Console.h"
+#import "HcodeDelegate.h"
 
 @interface HaskellDocument (Private)
 - (NSString *)haskellLaunchPath;
@@ -16,6 +17,8 @@
 @implementation HaskellDocument
 
 @synthesize locationLabel, documentView, temporaryStorage, lineNumberView, scrollView;
+
+@synthesize _task, _fileHandle;
 
 - (id)init {
     self = [super init];
@@ -96,16 +99,94 @@
 }
 
 // Support for executing 'runhaskell' on current document
-- (void)runHaskell: (id) sender
+
+// NOTE: This function is not complete yet and is in the middle of an overhaul.
+- (void)buildAndRun: (id) sender
 {
 	NSLog(@"RunHaskell on %@", [[self fileURL] path]);
 	
+	// Lets see if there is a shebang
+	//NSString *firstLine = [self.documentView getLine: 0];
+	
+//	NSLog(@"First Line: %@ ...", firstLine);
+	//[[self.documentView textStorage] string];
+	//NSRange line1Range = { 0, [self.documentView characterIndexForLine: 1] };
+	
+//	NSLog(@"Line 1 from index 0 to index %d", line1Range.length);
+//	NSString *firstLine = [store substringToIndex: [self.documentView characterIndexForLine: 1]-1];
+//	NSLog(@"Line 1 is \"%@\"", firstLine);
+	
+//	NSString *firstChar = [firstLine substringToIndex: 2];
+	
+//	if ([firstChar compare: @"#!"] == NSOrderedSame)
+//		NSLog(@"Has Shebang");
+	
 	// Next set this to save the document first (ask?)
-	NSTask *rh = [[NSTask alloc] init];
+/*	NSTask *rh = [[NSTask alloc] init];
 	rh.launchPath = [self haskellLaunchPath];
 	rh.arguments = [NSArray arrayWithObject: [[self fileURL] path]];
     NSLog(@"launch path: %@", rh.launchPath);
-	[rh launch];
+	[rh launch]; */
+	
+	
+	// BREAK THIS OUT INTO MORE INTELLIGENT SUBMETHODS - have them return NO if they fail to continue and we can
+	// try the next one
+	
+	// Option 1: Check for #! for instructions for running
+	if (_task)
+	{	// Must terminate
+		[_task terminate];
+	} else {
+		if ([self runAsScript] == NO)  // run it as a script
+		{
+			
+		}
+	}
+	
+	return;
+	// Option 2: Do we have a cabal file in the folder
+	/*
+	NSString *folder = [[[self fileURL] path] stringByDeletingLastPathComponent];
+	NSFileManager *filesystem = [[NSFileManager alloc] init];
+	NSError *error = nil;
+	
+	NSArray *files = [filesystem contentsOfDirectoryAtPath: folder error: &error];
+	if (files == nil)
+		NSLog(@"Error reading contents of folder %@ with error %@", folder, error);
+	else {
+		NSPredicate *cabalFilter = [NSPredicate predicateWithFormat: @"pathExtension like 'cabal'"];
+		
+		NSArray *filteredFiles = [files filteredArrayUsingPredicate: cabalFilter];
+		
+//		NSLog(@"filteredFiles: %@", filteredFiles);
+		
+		if ([filteredFiles count] > 0)
+		{
+			NSLog(@"Found at least one cabal file, letting cabal build it");
+		
+			NSTask *env = [[NSTask alloc] init];
+			[env setLaunchPath: @"/usr/bin/env"];
+			[env setArguments: [NSArray arrayWithObject: @"cabal configure"]];
+			[env launch];
+			[env waitUntilExit];
+			if ([env terminationStatus] == 0) { // next step
+				env == [[NSTask alloc] init];
+				[env setLaunchPath: @"/usr/bin/env"];
+				[env setArguments: [NSArray arrayWithObject: @"cabal build"]];
+				[env launch];
+				[env waitUntilExit];
+				if ([env terminationStatus] == 0) {
+					NSLog(@"Build Succeeded");
+					// Find the output!
+				}
+			}
+				
+		}
+	}
+
+	
+	*/
+	// Runhaskell like we do now, but with /usr/bin/env runhaskell
 }
 
 - (NSString *)haskellLaunchPath
@@ -127,6 +208,105 @@
     }
     [which release];
     return path;
+}
+
+- (BOOL) hasSheBang
+{
+	NSString *firstLine = [self.documentView getLine: 0];
+	
+	NSString *firstChars = [firstLine substringToIndex: 2];
+	
+	return ([firstChars compare: @"#!"] == NSOrderedSame) ? YES : NO;
+}
+
+- (BOOL) runAsScript
+{
+	if ([self hasSheBang] == YES)
+	{
+		[[Console sharedConsole] log: @"Starting...\n"];
+		NSTask *task = [[NSTask alloc] init];
+		task.launchPath = [[self fileURL] path];
+		[self redirectOutputFrom: task];
+		
+		NSMenuItem *run = [((HcodeDelegate*)[[NSApplication sharedApplication] delegate]) runItem];
+		
+		[run setTitle: @"Stop"];
+			
+		[task launch]; // implement IO redirection
+		
+		return YES;
+	}
+	
+	return NO;
+}
+
+- (void) redirectOutputFrom: (NSTask*) task
+{
+	NSPipe *pipe = [NSPipe pipe];
+	
+	_fileHandle = [pipe fileHandleForReading];
+//	[_fileHandle readInBackgroundAndNotify];
+//	[_fileHandle readToEndOfFileInBackgroundAndNotify];
+	_task = task;
+	[_fileHandle waitForDataInBackgroundAndNotify];
+	
+	
+	[_task setStandardOutput: pipe];
+	[_task setStandardError: pipe];
+	
+	[[NSNotificationCenter defaultCenter] addObserver: self
+											 selector: @selector(readPipe:)
+												 name: NSFileHandleDataAvailableNotification // NSFileHandleReadCompletionNotification
+											   object: _fileHandle];
+
+	[[NSNotificationCenter defaultCenter] addObserver: self
+											 selector: @selector(taskDidEnd:)
+												 name: NSTaskDidTerminateNotification	
+											   object: _task];
+	
+
+	//NSFileHandleReadToEndOfFileCompletionNotification
+}
+
+- (void) taskDidEnd: (NSNotification*) notification
+{
+	[[NSNotificationCenter defaultCenter] removeObserver: self 
+													name: NSFileHandleDataAvailableNotification // NSFileHandleReadCompletionNotification 
+												  object: nil];
+	
+	[[NSNotificationCenter defaultCenter] removeObserver: self 
+													name: NSTaskDidTerminateNotification 
+												  object: nil];	
+	
+	[[Console sharedConsole] log: @"\nTerminated.\n"];
+	
+	NSMenuItem *run = [((HcodeDelegate*)[[NSApplication sharedApplication] delegate]) runItem];
+	
+	[run setTitle: @"Build and Run"];
+	
+	
+	self._task = nil;
+}
+
+
+- (void) readPipe: (NSNotification*) notification
+{
+	NSData *data;
+	NSString *text;
+	
+	if ([notification object] != _fileHandle)
+		return;
+	
+//	data = [[notification userInfo] objectForKey: NSFileHandleNotificationDataItem];
+	data = [_fileHandle availableData];
+	
+	text = [[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding];
+	
+	[[Console sharedConsole] log: text];
+	
+	if (_task)
+		[_fileHandle waitForDataInBackgroundAndNotify];
+	//	[_fileHandle readInBackgroundAndNotify];
 }
 
 - (IBAction) birdTrack: (id) sender

@@ -45,4 +45,5 @@
 - (IBAction) shiftLeft: (id)sender;
 - (IBAction) shiftRight: (id)sender;
 
+- (NSString*) getLine: (NSUInteger) line;
 @end

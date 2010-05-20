@@ -7,12 +7,21 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Console.h"
 
-
-@interface HcodeDelegate : NSObject {
-
+@interface HcodeDelegate : NSObject <NSWindowDelegate, ConsoleDelegate> {
+	IBOutlet Console *console;
+	IBOutlet NSMenuItem *toggleConsoleMenu;
+	IBOutlet NSMenuItem *runItem;
 }
 
 - (BOOL)applicationShouldOpenUntitledFile:(NSApplication *)sender;
 
+@property (retain) Console *console;
+@property (retain) NSMenuItem *toggleConsoleMenu;
+@property (retain) NSMenuItem *runItem;
+
+
+- (IBAction) clearConsole: (id) sender;
+- (IBAction) toggleConsole: (NSMenuItem*) sender;
 @end

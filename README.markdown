@@ -20,6 +20,36 @@ I have added BWToolkit (provides some modern UI elements) and have
 made use of a class from NoodleKit, and both of these are licensed 
 the same way; I have decided to license this code in the same way.
 
+Release Notes:
+--------------
+
+19 May 2010:	A week ago I released α2, and I am almost done α3.
+				Just added the ability to run a command as a script
+				using the Build/Build and Run menu item. It must have
+				a #! on the first line to do anything.
+				
+				Also added is a console (Build/Show Console) that will
+				receive the output from the program ran. It autoscrolls.
+				
+				As a sample program, try this:
+				
+    #!/usr/bin/env runhaskell
+
+    import Control.Concurrent
+
+    main :: IO ()
+    main = do    
+        putStrLn "This is a test"
+        threadDelay 1000
+        main
+		
+				Please try to break it. I would appreciate some input 
+				from more experienced developers. Although the function
+				that runs the script is very haphazard now, the 
+				functionality isn't quite done – but the design is mostly
+				there.
+    
+
 
 Requirements to Build
 ---------------------

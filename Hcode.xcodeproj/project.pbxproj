@@ -18,7 +18,9 @@
 		8A4766C4119B219800B1AA85 /* Hicon-2.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8A4766C3119B219800B1AA85 /* Hicon-2.icns */; };
 		8A7857621187DD7D00FF8E98 /* Hicon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8A7857611187DD7D00FF8E98 /* Hicon.icns */; };
 		8AB0C570119A6EDB00F2147B /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AB0C56F119A6EDB00F2147B /* Defaults.plist */; };
-		8AE6F84E119910A600A24D7D /* ConsoleDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AE6F84D119910A600A24D7D /* ConsoleDocument.m */; };
+		8AB1BFF2119CEC8F00E326EE /* Console.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB1BFF1119CEC8F00E326EE /* Console.m */; };
+		8AB1BFF5119CECB800E326EE /* Console.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AB1BFF4119CECB800E326EE /* Console.xib */; };
+		8AE6F84E119910A600A24D7D /* ConsoleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AE6F84D119910A600A24D7D /* ConsoleView.m */; };
 		8AE9FE2E1197D2360097783C /* Hicon-Cabal.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8AE9FE2B1197D2360097783C /* Hicon-Cabal.icns */; };
 		8AE9FE2F1197D2360097783C /* Hicon-HS.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8AE9FE2C1197D2360097783C /* Hicon-HS.icns */; };
 		8AE9FE301197D2360097783C /* Hicon-LHS.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8AE9FE2D1197D2360097783C /* Hicon-LHS.icns */; };
@@ -61,6 +63,7 @@
 		2A37F4BAFDCFA73011CA2CEA /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Credits.rtf; path = Resources/English.lproj/Credits.rtf; sourceTree = "<group>"; };
 		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		8A1EEA4611A1953800F97253 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SynthesizeSingleton.h; path = Source/SynthesizeSingleton.h; sourceTree = "<group>"; };
 		8A247C9811791D8E008E7210 /* LambdaIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = LambdaIcon.icns; path = Resources/LambdaIcon.icns; sourceTree = "<group>"; };
 		8A247C9E11792AFB008E7210 /* hsfile.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = hsfile.icns; path = Resources/hsfile.icns; sourceTree = "<group>"; };
 		8A247C9F11792AFB008E7210 /* lhsFile.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = lhsFile.icns; path = Resources/lhsFile.icns; sourceTree = "<group>"; };
@@ -73,8 +76,11 @@
 		8A4766C3119B219800B1AA85 /* Hicon-2.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = "Hicon-2.icns"; path = "Resources/Hicon-2.icns"; sourceTree = "<group>"; };
 		8A7857611187DD7D00FF8E98 /* Hicon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = Hicon.icns; path = Resources/Hicon.icns; sourceTree = "<group>"; };
 		8AB0C56F119A6EDB00F2147B /* Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Defaults.plist; path = Resources/Defaults.plist; sourceTree = "<group>"; };
-		8AE6F84C119910A600A24D7D /* ConsoleDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConsoleDocument.h; path = Source/ConsoleDocument.h; sourceTree = "<group>"; };
-		8AE6F84D119910A600A24D7D /* ConsoleDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConsoleDocument.m; path = Source/ConsoleDocument.m; sourceTree = "<group>"; };
+		8AB1BFF0119CEC8F00E326EE /* Console.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Console.h; path = Source/Console.h; sourceTree = "<group>"; };
+		8AB1BFF1119CEC8F00E326EE /* Console.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Console.m; path = Source/Console.m; sourceTree = "<group>"; };
+		8AB1BFF4119CECB800E326EE /* Console.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Console.xib; path = Resources/Console.xib; sourceTree = "<group>"; };
+		8AE6F84C119910A600A24D7D /* ConsoleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConsoleView.h; path = Source/ConsoleView.h; sourceTree = "<group>"; };
+		8AE6F84D119910A600A24D7D /* ConsoleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConsoleView.m; path = Source/ConsoleView.m; sourceTree = "<group>"; };
 		8AE9FE2B1197D2360097783C /* Hicon-Cabal.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = "Hicon-Cabal.icns"; path = "Resources/Hicon-Cabal.icns"; sourceTree = "<group>"; };
 		8AE9FE2C1197D2360097783C /* Hicon-HS.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = "Hicon-HS.icns"; path = "Resources/Hicon-HS.icns"; sourceTree = "<group>"; };
 		8AE9FE2D1197D2360097783C /* Hicon-LHS.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = "Hicon-LHS.icns"; path = "Resources/Hicon-LHS.icns"; sourceTree = "<group>"; };
@@ -132,7 +138,7 @@
 			children = (
 				8AEE19A311801EDD00DCD7F4 /* README.markdown */,
 				2A37F4ABFDCFA73011CA2CEA /* Source */,
-				2A37F4B8FDCFA73011CA2CEA /* Hcode */,
+				2A37F4B8FDCFA73011CA2CEA /* Resources */,
 				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
 				19C28FB0FE9D524F11CA2CBB /* Products */,
 			);
@@ -154,6 +160,7 @@
 		2A37F4AFFDCFA73011CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				8A1EEA4611A1953800F97253 /* SynthesizeSingleton.h */,
 				2564AD2C0F5327BB00F57823 /* Hcode_Prefix.pch */,
 				2A37F4B0FDCFA73011CA2CEA /* main.m */,
 				8A247D0C11794EC1008E7210 /* HcodeDelegate.h */,
@@ -162,7 +169,7 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
-		2A37F4B8FDCFA73011CA2CEA /* Hcode */ = {
+		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				8A4766C3119B219800B1AA85 /* Hicon-2.icns */,
@@ -179,8 +186,9 @@
 				1DDD58280DA1D0D100B32029 /* HaskellDocument.xib */,
 				1DDD582A0DA1D0D100B32029 /* MainMenu.xib */,
 				8AB0C56F119A6EDB00F2147B /* Defaults.plist */,
+				8AB1BFF4119CECB800E326EE /* Console.xib */,
 			);
-			name = Hcode;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
@@ -227,8 +235,10 @@
 		8AE6F850119910AB00A24D7D /* Console */ = {
 			isa = PBXGroup;
 			children = (
-				8AE6F84C119910A600A24D7D /* ConsoleDocument.h */,
-				8AE6F84D119910A600A24D7D /* ConsoleDocument.m */,
+				8AE6F84C119910A600A24D7D /* ConsoleView.h */,
+				8AE6F84D119910A600A24D7D /* ConsoleView.m */,
+				8AB1BFF0119CEC8F00E326EE /* Console.h */,
+				8AB1BFF1119CEC8F00E326EE /* Console.m */,
 			);
 			name = Console;
 			sourceTree = "<group>";
@@ -291,6 +301,7 @@
 				8AE9FE301197D2360097783C /* Hicon-LHS.icns in Resources */,
 				8AB0C570119A6EDB00F2147B /* Defaults.plist in Resources */,
 				8A4766C4119B219800B1AA85 /* Hicon-2.icns in Resources */,
+				8AB1BFF5119CECB800E326EE /* Console.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,7 +319,8 @@
 				8A247D9A1179F1A8008E7210 /* CodeView.m in Sources */,
 				8AEE1868117F8EF500DCD7F4 /* CodeLineNumberView.m in Sources */,
 				8AEE1869117F8EF500DCD7F4 /* CodeLineNumberMarker.m in Sources */,
-				8AE6F84E119910A600A24D7D /* ConsoleDocument.m in Sources */,
+				8AE6F84E119910A600A24D7D /* ConsoleView.m in Sources */,
+				8AB1BFF2119CEC8F00E326EE /* Console.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +412,7 @@
 				CODE_SIGN_IDENTITY = "Don't Code Sign";
 				CURRENT_PROJECT_VERSION = 0.1a;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
