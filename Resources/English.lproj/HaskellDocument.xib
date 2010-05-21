@@ -300,29 +300,29 @@
 			<object class="NSCustomObject" id="796877042">
 				<string key="NSClassName">NSApplication</string>
 			</object>
-			<object class="NSCustomView" id="137979945">
+			<object class="NSCustomView" id="581972543">
 				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">4364</int>
 				<object class="NSMutableArray" key="NSSubviews">
 					<bool key="EncodedWithXMLCoder">YES</bool>
-					<object class="NSButton" id="176347685">
-						<reference key="NSNextResponder" ref="137979945"/>
+					<object class="NSButton" id="399100288">
+						<reference key="NSNextResponder" ref="581972543"/>
 						<int key="NSvFlags">274</int>
-						<string key="NSFrame">{{0, 2}, {22, 22}}</string>
-						<reference key="NSSuperview" ref="137979945"/>
+						<string key="NSFrame">{{0, 1}, {22, 19}}</string>
+						<reference key="NSSuperview" ref="581972543"/>
 						<bool key="NSEnabled">YES</bool>
-						<object class="NSButtonCell" key="NSCell" id="804275452">
+						<object class="NSButtonCell" key="NSCell" id="539675079">
 							<int key="NSCellFlags">67239424</int>
 							<int key="NSCellFlags2">134250496</int>
 							<string key="NSContents"/>
 							<object class="NSFont" key="NSSupport">
-								<string key="NSName">LucidaGrande</string>
-								<double key="NSSize">13</double>
-								<int key="NSfFlags">1044</int>
+								<string key="NSName">LucidaGrande-Bold</string>
+								<double key="NSSize">12</double>
+								<int key="NSfFlags">16</int>
 							</object>
-							<reference key="NSControlView" ref="176347685"/>
-							<int key="NSButtonFlags">-2041822977</int>
-							<int key="NSButtonFlags2">162</int>
+							<reference key="NSControlView" ref="399100288"/>
+							<int key="NSButtonFlags">-1228652289</int>
+							<int key="NSButtonFlags2">173</int>
 							<object class="NSCustomResource" key="NSNormalImage">
 								<string key="NSClassName">NSImage</string>
 								<string key="NSResourceName">Play</string>
@@ -394,7 +394,7 @@
 					<object class="IBActionConnection" key="connection">
 						<string key="label">buildAndRun:</string>
 						<reference key="source" ref="613418571"/>
-						<reference key="destination" ref="176347685"/>
+						<reference key="destination" ref="399100288"/>
 					</object>
 					<int key="connectionID">100116</int>
 				</object>
@@ -402,7 +402,7 @@
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">accessoryView</string>
 						<reference key="source" ref="512844837"/>
-						<reference key="destination" ref="137979945"/>
+						<reference key="destination" ref="581972543"/>
 					</object>
 					<int key="connectionID">100117</int>
 				</object>
@@ -418,7 +418,7 @@
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">playButton</string>
 						<reference key="source" ref="512844837"/>
-						<reference key="destination" ref="176347685"/>
+						<reference key="destination" ref="399100288"/>
 					</object>
 					<int key="connectionID">100123</int>
 				</object>
@@ -521,26 +521,26 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">100113</int>
-						<reference key="object" ref="137979945"/>
+						<reference key="object" ref="581972543"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="176347685"/>
+							<reference ref="399100288"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">100114</int>
-						<reference key="object" ref="176347685"/>
+						<reference key="object" ref="399100288"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="804275452"/>
+							<reference ref="539675079"/>
 						</object>
-						<reference key="parent" ref="137979945"/>
+						<reference key="parent" ref="581972543"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">100115</int>
-						<reference key="object" ref="804275452"/>
-						<reference key="parent" ref="176347685"/>
+						<reference key="object" ref="539675079"/>
+						<reference key="parent" ref="399100288"/>
 					</object>
 				</object>
 			</object>

@@ -7,6 +7,7 @@
 //
 //	Credits:
 //		Improving stdout reading	dirtyfreebooter/macdev
+//		Accessory View on titlebar  Matt Patenaude http://iloveco.de/adding-a-titlebar-accessory-view-to-a-window/
 
 #import "HaskellDocument.h"
 #import "Console.h"
@@ -44,6 +45,8 @@
 	[scrollView setHasVerticalRuler: YES];
 	[scrollView setRulersVisible: YES];
 	
+	
+	// Accessory View
 	NSView *themeFrame = [[documentWindow contentView] superview];
 	NSRect c = [themeFrame frame]; // container
 	NSRect aV = [accessoryView frame]; // accessory view

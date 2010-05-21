@@ -342,7 +342,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>8A334DED11A654AE00AFC38A</string>
+										<string>8A15500911A6E1B0003A419A</string>
 										<key>history</key>
 										<array>
 											<string>8A10159E1199147800C6160D</string>
@@ -363,7 +363,7 @@
 											<string>8A334DE711A6549900AFC38A</string>
 											<string>8A334DE811A6549900AFC38A</string>
 											<string>8A334DE911A6549900AFC38A</string>
-											<string>8A334DD311A653B100AFC38A</string>
+											<string>8A334DED11A654AE00AFC38A</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -421,9 +421,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>8A334DAE11A6528700AFC38A</string>
+				<string>8A15500A11A6E1B0003A419A</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>8A334DAF11A6528700AFC38A</string>
+				<string>8A15500B11A6E1B0003A419A</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -561,11 +561,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>8A334DB911A6528700AFC38A</string>
-		<string>8A334DBA11A6528700AFC38A</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>8A247C9311790087008E7210</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/iaefai/Projects/Hcode/Hcode.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -590,7 +586,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>HaskellDocument.m</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -607,8 +603,6 @@
 							<string>310pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -648,7 +642,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>8A247C9311790087008E7210</string>
-				<string>8A334DB011A6528700AFC38A</string>
+				<string>8A15500C11A6E1B0003A419A</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -661,7 +655,7 @@
 			<key>WindowToolGUID</key>
 			<string>8A247C9311790087008E7210</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
