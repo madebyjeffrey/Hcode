@@ -7,11 +7,13 @@
 //
 
 #import "HcodeDelegate.h"
-
+#import "SynthesizeSingleton.h"
 
 @implementation HcodeDelegate
 
 @synthesize console, toggleConsoleMenu, runItem;
+
+SYNTHESIZE_SINGLETON_FOR_CLASS(HcodeDelegate)
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {

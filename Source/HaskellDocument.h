@@ -23,8 +23,9 @@
 	CodeLineNumberView * lineNumberView;
 	IBOutlet NSScrollView * scrollView;
 	
-	NSTask *_task;
-	NSFileHandle *_fileHandle;
+	IBOutlet NSView * accessoryView;
+	IBOutlet NSWindow * documentWindow;
+	IBOutlet NSButton * playButton;
 }
 
 @property (retain) IBOutlet NSTextField * locationLabel;
@@ -32,12 +33,8 @@
 @property (retain) NSString * temporaryStorage;
 @property (retain) CodeLineNumberView * lineNumberView;
 @property (retain) IBOutlet NSScrollView * scrollView;
-
-@property (assign) NSTask *_task;
-@property (assign) NSFileHandle *_fileHandle;
-
+@property (retain) 	IBOutlet NSButton * playButton;
 
 - (BOOL) hasSheBang;
-- (BOOL) runAsScript;
-- (void) redirectOutputFrom: (NSTask*) task;
+
 @end

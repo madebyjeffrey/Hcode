@@ -16,6 +16,7 @@
 }
 
 - (BOOL)applicationShouldOpenUntitledFile:(NSApplication *)sender;
++ (HcodeDelegate*) sharedHcodeDelegate;
 
 @property (retain) Console *console;
 @property (retain) NSMenuItem *toggleConsoleMenu;
