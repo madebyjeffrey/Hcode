@@ -19,14 +19,14 @@
 
 
 @interface Console : NSWindowController {
-	IBOutlet ConsoleView *consoleView;
-	__weak id <ConsoleDelegate> delegate;
+	//IBOutlet ConsoleView *consoleView;
+    //id <ConsoleDelegate> delegate;
 }
-@property (retain) IBOutlet ConsoleView *consoleView;
-@property (assign) __weak id <ConsoleDelegate> delegate;
+@property (strong) IBOutlet ConsoleView *consoleView;
+@property (unsafe_unretained) id <ConsoleDelegate> delegate;
 
 - (void) clear;
 - (void) log: (id) text;
 
-+ (Console*) sharedConsole;
+//+ (Console*) sharedConsole;
 @end

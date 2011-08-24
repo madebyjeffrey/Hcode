@@ -12,7 +12,7 @@
 
 @synthesize consoleView, delegate;
 
-SYNTHESIZE_SINGLETON_FOR_CLASS(Console);
+//SYNTHESIZE_SINGLETON_FOR_CLASS(Console);
 
 /*
 - (void)windowDidLoad

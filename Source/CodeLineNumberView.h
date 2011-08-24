@@ -43,14 +43,20 @@
     NSMutableArray      *_lineIndices;
 	// Maps line numbers to markers
 	NSMutableDictionary	*_linesToMarkers;
-	NSFont              *_font;
+/*	NSFont              *_font;
 	NSColor				*_textColor;
 	NSColor				*_alternateTextColor;
-	NSColor				*_backgroundColor;
+	NSColor				*_backgroundColor; */
 }
 
 - (id)initWithScrollView:(NSScrollView *)aScrollView;
 
+
+@property (strong) NSFont *font;
+@property (strong) NSColor *textColor;
+@property (strong) NSColor *alternateTextColor;
+@property (strong) NSColor *backgroundColor;
+/*
 - (void)setFont:(NSFont *)aFont;
 - (NSFont *)font;
 
@@ -62,7 +68,7 @@
 
 - (void)setBackgroundColor:(NSColor *)color;
 - (NSColor *)backgroundColor;
-
+*/
 - (NSUInteger)lineNumberForLocation:(CGFloat)location;
 - (CodeLineNumberMarker *)markerAtLine:(NSUInteger)line;
 

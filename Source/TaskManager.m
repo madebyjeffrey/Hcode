@@ -5,7 +5,7 @@
 //  Created by Jeffrey Drake on 10-05-21.
 //  Copyright 2010 Jeffrey Drake. All rights reserved.
 //
-
+/*
 #import "TaskManager.h"
 #import "Console.h"
 #import "HcodeDelegate.h"
@@ -129,11 +129,12 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(TaskManager)
 }
 
 @end
+ */
 
 /* for storage...
  
  // Option 2: Do we have a cabal file in the folder
- /*
+ 
  NSString *folder = [[[self fileURL] path] stringByDeletingLastPathComponent];
  NSFileManager *filesystem = [[NSFileManager alloc] init];
  NSError *error = nil;

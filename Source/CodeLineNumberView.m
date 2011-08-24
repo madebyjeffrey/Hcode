@@ -47,13 +47,16 @@
 
 @implementation CodeLineNumberView
 
+@synthesize font, textColor, alternateTextColor, backgroundColor;
+
 - (id)initWithScrollView:(NSScrollView *)aScrollView
 {
     if ((self = [super initWithScrollView:aScrollView orientation:NSVerticalRuler]) != nil)
     {
 		_linesToMarkers = [[NSMutableDictionary alloc] init];
+        self.alternateTextColor = [NSColor whiteColor];
 		
-        [self setClientView:[aScrollView documentView]];
+        [self setClientView: [aScrollView documentView]];
     }
     return self;
 }
@@ -68,15 +71,14 @@
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     
-    [_lineIndices release];
-	[_linesToMarkers release];
-    [_font release];
+    _lineIndices = nil;
+    _linesToMarkers = nil;
     
-    [super dealloc];
 }
-
+/*
 - (void)setFont:(NSFont *)aFont
 {
+    
     if (_font != aFont)
     {
 		[_font autorelease];		
@@ -141,7 +143,7 @@
 - (NSColor *)backgroundColor
 {
 	return _backgroundColor;
-}
+}*/
 
 - (void)setClientView:(NSView *)aView
 {
@@ -173,7 +175,6 @@
 
 - (void)invalidateLineIndices
 {
-	[_lineIndices release];
 	_lineIndices = nil;
 }
 
@@ -251,7 +252,6 @@
         
         text = [view string];
         stringLength = [text length];
-        [_lineIndices release];
         _lineIndices = [[NSMutableArray alloc] init];
         
         index = 0;
@@ -370,9 +370,9 @@
 
 	bounds = [self bounds];
 
-	if (_backgroundColor != nil)
+	if (self.backgroundColor != nil)
 	{
-		[_backgroundColor set];
+		[self.backgroundColor set];
 		NSRectFill(bounds);
 		
 		[[NSColor colorWithCalibratedWhite:0.58 alpha:1.0] set];
@@ -534,17 +534,17 @@
 	{
 		if ([decoder allowsKeyedCoding])
 		{
-			_font = [[decoder decodeObjectForKey:NOODLE_FONT_CODING_KEY] retain];
-			_textColor = [[decoder decodeObjectForKey:NOODLE_TEXT_COLOR_CODING_KEY] retain];
-			_alternateTextColor = [[decoder decodeObjectForKey:NOODLE_ALT_TEXT_COLOR_CODING_KEY] retain];
-			_backgroundColor = [[decoder decodeObjectForKey:NOODLE_BACKGROUND_COLOR_CODING_KEY] retain];
+			self.font = [decoder decodeObjectForKey:NOODLE_FONT_CODING_KEY];
+			self.textColor = [decoder decodeObjectForKey:NOODLE_TEXT_COLOR_CODING_KEY];
+			self.alternateTextColor = [decoder decodeObjectForKey:NOODLE_ALT_TEXT_COLOR_CODING_KEY];
+			self.backgroundColor = [decoder decodeObjectForKey:NOODLE_BACKGROUND_COLOR_CODING_KEY];
 		}
 		else
 		{
-			_font = [[decoder decodeObject] retain];
-			_textColor = [[decoder decodeObject] retain];
-			_alternateTextColor = [[decoder decodeObject] retain];
-			_backgroundColor = [[decoder decodeObject] retain];
+			self.font = [decoder decodeObject];
+			self.textColor = [decoder decodeObject];
+			self.alternateTextColor = [decoder decodeObject];
+			self.backgroundColor = [decoder decodeObject];
 		}
 		
 		_linesToMarkers = [[NSMutableDictionary alloc] init];
@@ -558,17 +558,17 @@
 	
 	if ([encoder allowsKeyedCoding])
 	{
-		[encoder encodeObject:_font forKey:NOODLE_FONT_CODING_KEY];
-		[encoder encodeObject:_textColor forKey:NOODLE_TEXT_COLOR_CODING_KEY];
-		[encoder encodeObject:_alternateTextColor forKey:NOODLE_ALT_TEXT_COLOR_CODING_KEY];
-		[encoder encodeObject:_backgroundColor forKey:NOODLE_BACKGROUND_COLOR_CODING_KEY];
+		[encoder encodeObject: self.font forKey:NOODLE_FONT_CODING_KEY];
+		[encoder encodeObject: self.textColor forKey:NOODLE_TEXT_COLOR_CODING_KEY];
+		[encoder encodeObject: self.alternateTextColor forKey:NOODLE_ALT_TEXT_COLOR_CODING_KEY];
+		[encoder encodeObject: self.backgroundColor forKey:NOODLE_BACKGROUND_COLOR_CODING_KEY];
 	}
 	else
 	{
-		[encoder encodeObject:_font];
-		[encoder encodeObject:_textColor];
-		[encoder encodeObject:_alternateTextColor];
-		[encoder encodeObject:_backgroundColor];
+		[encoder encodeObject: self.font];
+		[encoder encodeObject: self.textColor];
+		[encoder encodeObject: self.alternateTextColor];
+		[encoder encodeObject: self.backgroundColor];
 	}
 }
 

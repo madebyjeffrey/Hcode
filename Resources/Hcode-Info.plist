@@ -63,6 +63,8 @@
 	</array>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleGetInfoString</key>
+	<string>Hcode ${CURRENT_PROJECT_VERSION} © 2010 Jeffrey Drake.</string>
 	<key>CFBundleIconFile</key>
 	<string>Hicon-2.icns</string>
 	<key>CFBundleIdentifier</key>
@@ -73,18 +75,18 @@
 	<string>Hcode</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>α2</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>${CURRENT_PROJECT_VERSION}</string>
-	<key>CFBundleShortVersionString</key>
-	<string>α2</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.developer-tools</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
-	<key>CFBundleGetInfoString</key>
-	<string>Hcode ${CURRENT_PROJECT_VERSION} © 2010 Jeffrey Drake.</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 </dict>

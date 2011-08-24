@@ -28,12 +28,12 @@
 	IBOutlet NSButton * playButton;
 }
 
-@property (retain) IBOutlet NSTextField * locationLabel;
-@property (retain) IBOutlet CodeView * documentView;
-@property (retain) NSString * temporaryStorage;
-@property (retain) CodeLineNumberView * lineNumberView;
-@property (retain) IBOutlet NSScrollView * scrollView;
-@property (retain) 	IBOutlet NSButton * playButton;
+@property (strong) IBOutlet NSTextField * locationLabel;
+@property (strong) IBOutlet CodeView * documentView;
+@property (strong) NSString * temporaryStorage;
+@property (strong) CodeLineNumberView * lineNumberView;
+@property (strong) IBOutlet NSScrollView * scrollView;
+@property (strong) 	IBOutlet NSButton * playButton;
 
 - (BOOL) hasSheBang;
 

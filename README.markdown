@@ -2,26 +2,46 @@
 Hcode: The Haskell Editor
 =========================
 
-[Hcode](http://web.me.com/iaefai) is meant to be a spartan editor for the purpose of editing 
+Hcode is meant to be a spartan editor for the purpose of editing 
 Haskell source code for MacOS X.
 
-It is written using Cocoa/Objective-C to give the best experience 
-I can envision. Part of the design is to produce an editor 
-component called CodeView that can be taken into another editor
-and not have to be modified much to get a decent code editor right
-away.
+It is written using Cocoa/Objective-C to give the best Mac experience 
+I can envision. I have some vision of what I want to do with this editor,
+and in preparation of this, I have done the minimal necessary to ensure this 
+compiles with XCode 4 on Lion. In doing so, no new functionality has been
+introduced, but going forward Lion will be required to run Hcode.
 
-In addition, a basic project management window is being planned if
-I can manage to figure out a way to get the Cocoa Document classes
-to work with it.
+To compile Hcode as it is now, requires the latest XCode tools available
+to paid developers, due to some technologies available now from clang.
 
-The initial README file for this program referenced the GPL. Because
-I have added BWToolkit (provides some modern UI elements) and have
-made use of a class from NoodleKit, and both of these are licensed 
-the same way; I have decided to license this code in the same way.
+What I intend to do, as time and ability permits, is to implement a single
+window interface that allows some basic project management through opening
+a folder and having a cabal file inside.
+
+The ability to run and view the output of the Haskell program is very important. 
+I must study the best way to do this.
+
+The original code from 19 May 2010 said this:
+
+    The initial README file for this program referenced the GPL. Because
+    I have added BWToolkit (provides some modern UI elements) and have
+    made use of a class from NoodleKit, and both of these are licensed 
+    the same way; I have decided to license this code in the same way.
+
+However, as part of the transition to XCode 4 and Lion, the BWToolkit will be removed
+with a possible retention of a single class that I have used from it. BWToolkit is also 
+not safe to use on the AppStore - which I believe Hcode would go for ease of finding 
+if and when it becomes a usable product.
 
 Release Notes:
 --------------
+
+    24 Aug 2011 No, this is not α3. This is a port to Lion and some other new compiler technology.
+
+				This commit, is to enable this aging unfinished project 
+				to compile on a more modern system. I have been thinking
+				about some things going forward. See above for more details.
+                
 
     19 May 2010	A week ago I released α2, and I am almost done α3.
 	

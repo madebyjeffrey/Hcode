@@ -16,11 +16,11 @@
 }
 
 - (BOOL)applicationShouldOpenUntitledFile:(NSApplication *)sender;
-+ (HcodeDelegate*) sharedHcodeDelegate;
+//+ (HcodeDelegate*) sharedHcodeDelegate;
 
-@property (retain) Console *console;
-@property (retain) NSMenuItem *toggleConsoleMenu;
-@property (retain) NSMenuItem *runItem;
+@property (strong) Console *console;
+@property (strong) NSMenuItem *toggleConsoleMenu;
+@property (strong) NSMenuItem *runItem;
 
 
 - (IBAction) clearConsole: (id) sender;

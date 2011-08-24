@@ -38,8 +38,8 @@
 }
 
 - (void) awakeFromNib {
-	self.lineNumberView = [[[CodeLineNumberView alloc] 
-								initWithScrollView: scrollView] autorelease];
+	self.lineNumberView = [[CodeLineNumberView alloc] 
+								initWithScrollView: scrollView];
 	[scrollView setVerticalRulerView: self.lineNumberView];
 	[scrollView setHasHorizontalRuler: NO];
 	[scrollView setHasVerticalRuler: YES];
@@ -47,7 +47,7 @@
 	
 	
 	// Accessory View
-	NSView *themeFrame = [[documentWindow contentView] superview];
+/*	NSView *themeFrame = [[documentWindow contentView] superview];
 	NSRect c = [themeFrame frame]; // container
 	NSRect aV = [accessoryView frame]; // accessory view
 	NSRect newFrame = NSMakeRect(c.size.width - aV.size.width,
@@ -57,7 +57,7 @@
 	
 	[accessoryView setFrame: newFrame];
 	[themeFrame addSubview: accessoryView];
-	
+*/	
 }
 
 - (void)windowControllerDidLoadNib:(NSWindowController *) aController {
@@ -89,7 +89,7 @@
 }
 
 - (BOOL)readFromData:(NSData *)data ofType:(NSString *)typeName error:(NSError **)outError {
-	NSString *contents = [[[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding] autorelease];
+	NSString *contents = [[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding];
 	
 	NSLog(@"contents: %@", contents);
 	if (contents == nil) 	{
@@ -112,10 +112,10 @@
 
 - (void)buildAndRun: (id) sender
 {
-	if ([[TaskManager sharedTaskManager] active])
+/*	if ([[TaskManager sharedTaskManager] active])
 		[[TaskManager sharedTaskManager] terminate];
 	else 
-		[[TaskManager sharedTaskManager] runDocument: self];
+		[[TaskManager sharedTaskManager] runDocument: self]; */
 }
 
 - (BOOL) hasSheBang

@@ -98,7 +98,6 @@
 
 - (void)invalidateLineIndices
 {
-	[_lineIndices release];
 	_lineIndices = nil;
 }
 
@@ -117,7 +116,6 @@
 	
 	text = [self string];
 	stringLength = [text length];
-	[_lineIndices release];
 	_lineIndices = [[NSMutableArray alloc] init];
 	
 	index = 0;
@@ -276,7 +274,7 @@
 		
 //		NSLog(@"Space at beginning from %u to %u", whitespaceAtBeginning.location, 
 //			  whitespaceAtBeginning.location + whitespaceAtBeginning.length);
-		NSLog(@"Whitespace at beginning: %u", whitespaceAtBeginning.length);
+		NSLog(@"Whitespace at beginning: %lu", whitespaceAtBeginning.length);
 		
 		// Remove min(length, 4) whitespace from beginning of line
 		
@@ -284,7 +282,7 @@
 		
 		NSString *str = [NSString stringWithFormat: @"%*s", range.length, ""];
 		
-		NSLog(@"Removing %u characters [%@] from beginning of line.", range.length, str);
+		NSLog(@"Removing %lu characters [%@] from beginning of line.", range.length, str);
 		
 		//NSLog(@"_%*s_", 5, "");
 		//NSLog(@"Inserting '    ' on line %u", [i unsignedIntegerValue]);
@@ -312,7 +310,7 @@
 		NSUInteger index = [[[self lineIndices] objectAtIndex: [i unsignedIntegerValue]] unsignedIntegerValue];
 		
 		NSRange range = NSMakeRange(index, 0);
-		NSLog(@"Inserting '    ' on line %u", [i unsignedIntegerValue]);		
+		NSLog(@"Inserting '    ' on line %lu", [i unsignedIntegerValue]);		
 		if ([self shouldChangeTextInRange: range 
 						replacementString: @"    "]) {
 			[self replaceCharactersInRange: range

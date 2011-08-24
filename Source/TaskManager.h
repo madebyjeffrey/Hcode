@@ -5,7 +5,7 @@
 //  Created by Jeffrey Drake on 10-05-21.
 //  Copyright 2010 Jeffrey Drake. All rights reserved.
 //
-
+/*
 #import <Cocoa/Cocoa.h>
 #import "HaskellDocument.h"
 
@@ -23,3 +23,4 @@
 - (void) terminate;
 - (BOOL) active;
 @end
+*/

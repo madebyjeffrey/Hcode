@@ -13,7 +13,7 @@
 
 @synthesize console, toggleConsoleMenu, runItem;
 
-SYNTHESIZE_SINGLETON_FOR_CLASS(HcodeDelegate)
+//SYNTHESIZE_SINGLETON_FOR_CLASS(HcodeDelegate)
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
